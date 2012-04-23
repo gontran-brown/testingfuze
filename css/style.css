@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html body {
+  overflow: hidden; }
+  html body #header ul {
+    text-decoration: none; }
+  html body #carnet ul {
+    text-decoration: none; }
+    html body #carnet ul li {
+      border-radius: 20px;
+      float: left;
+      width: 200px;
+      clear: both; }
+      html body #carnet ul li span {
+        line-height: 2em;
+        width: 200px;
+        display: table; }
+        html body #carnet ul li span .activer {
+          float: right;
+          width: 60px; }
