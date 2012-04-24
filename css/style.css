@@ -8,29 +8,38 @@ html body {
     text-decoration: none; }
   html body #carnet {
     position: relative;
-    background-color: grey; }
-    html body #carnet ul {
-      text-decoration: none;
-      text-align: left; }
-      html body #carnet ul li {
-        border-radius: 20px;
-        background-color: white;
-        list-style: none;
-        line-height: 0.75em;
-        float: left;
+    float: left;
+    margin: 10px; }
+    html body #carnet ul li {
+      border-radius: 30px;
+      box-shadow: 2px 2px 2px grey;
+      background-color: white;
+      list-style: none;
+      text-align: center;
+      line-height: 0.75em;
+      float: left;
+      width: 300px;
+      clear: both;
+      margin-bottom: 3px;
+      margin-top: 3px; }
+      html body #carnet ul li span {
+        padding: 2px;
+        margin: 3px; }
+      html body #carnet ul li .adress {
+        line-height: 0.5em;
         width: 200px;
-        clear: both; }
-        html body #carnet ul li span .adress {
-          line-height: 2em;
-          width: 200px;
-          display: table; }
-        html body #carnet ul li span .nom {
-          line-height: 2em;
-          width: 200px;
-          display: table;
-          color: #6495ed;
-          font-weight: bold;
-          font-size: 0.9em; }
-        html body #carnet ul li span .activer {
-          float: right;
-          width: 60px; }
+        display: table; }
+      html body #carnet ul li .nom {
+        line-height: 0.5em;
+        width: 200px;
+        display: table;
+        color: #6495ed;
+        font-weight: bold;
+        font-size: 0.9em; }
+        html body #carnet ul li .nom:active {
+          float: left; }
+        html body #carnet ul li .nom:after {
+          float: right; }
+      html body #carnet ul li .activer {
+        float: right;
+        width: 100px; }

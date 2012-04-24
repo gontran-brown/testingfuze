@@ -12,34 +12,45 @@ html
 
     #carnet
       position: relative
-      background-color: grey
+      float: left
+      margin: 10px
+
       ul
-        text-decoration: none
-        text-align: left
         li
-          border-radius: 20px
+          border-radius: 30px
+          box-shadow: 2px 2px 2px grey
           background-color: #FFFFFF
           list-style: none
+          text-align: center
           line-height: 0.75em
           float: left
-          width: 200px
+          width: 300px
           clear: both
+          margin:
+            bottom: 3px
+            top: 3px
 
           span
-            .adress
-              line-height: 2em
-              width: 200px
-              display: table
+            padding: 2px
+            margin: 3px
+          .adress
+            line-height: 0.5em
+            width: 200px
+            display: table
 
-            .nom
-              line-height: 2em
-              width: 200px
-              display: table
-              color: #6495ED
-              font-weight: bold
-              font-size: 0.90em
+          .nom
+            line-height: 0.5em
+            width: 200px
+            display: table
+            color: #6495ED
+            font-weight: bold
+            font-size: 0.90em
 
-            .activer
+            &:active
+              float: left
+            &:after
               float: right
-              width: 60px
 
+          .activer
+            float: right
+            width: 100px
