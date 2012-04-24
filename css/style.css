@@ -4,10 +4,13 @@
 
 html body {
   overflow: hidden; }
-  html body #header ul {
-    text-decoration: none; }
+  html body #header {
+    margin: 10px;
+    width: 400px; }
+    html body #header ul li {
+      list-style: none;
+      display: inline; }
   html body #carnet {
-    position: relative;
     float: left;
     margin: 10px; }
     html body #carnet ul li {
@@ -18,7 +21,7 @@ html body {
       text-align: center;
       line-height: 0.75em;
       float: left;
-      width: 300px;
+      width: 400px;
       clear: both;
       margin-bottom: 3px;
       margin-top: 3px; }
@@ -43,3 +46,12 @@ html body {
       html body #carnet ul li .activer {
         float: right;
         width: 100px; }
+  html body #footer {
+    margin: 10px;
+    width: 400px; }
+    html body #footer ul li {
+      list-style: none;
+      text-align: center;
+      display: inline; }
+      html body #footer ul li .button {
+        width: 76px; }

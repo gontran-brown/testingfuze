@@ -13,8 +13,17 @@
     #header
       %ul
         %li
+          %a{href:"#"} retour
+        %li
+          %span
+            PassVIP
+        %li
+          %a{href: "#"} Valider
+      %ul
+        %li
           /image
         %li
+          %span Trouvez dans mes contacts
           /titre
 
     #carnet
@@ -35,4 +44,14 @@
             On
 
     #footer
-      /image
+      %ul
+        %li
+          %input.button.message{type: "button", name: "message", onclick:"javscript:windows.open()"}
+        %li
+          %input.button.carte{type: "button", name: "cartes", onclick: "javascript:windows.open()"}
+        %li
+          %input.button.compte{type: "button", name: "compte", onclick: "javascript:windows.open()"}
+        %li
+          %input.button.lieu{type: "button", name: "lieu", onclick: "javascript:windows.open()"}
+        %li
+          %input.button.scan{type: "button", name: "scan", onclick: "javascript:windows.open()"}
