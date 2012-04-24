@@ -6,17 +6,31 @@ html body {
   overflow: hidden; }
   html body #header ul {
     text-decoration: none; }
-  html body #carnet ul {
-    text-decoration: none; }
-    html body #carnet ul li {
-      border-radius: 20px;
-      float: left;
-      width: 200px;
-      clear: both; }
-      html body #carnet ul li span {
-        line-height: 2em;
+  html body #carnet {
+    position: relative;
+    background-color: grey; }
+    html body #carnet ul {
+      text-decoration: none;
+      text-align: left; }
+      html body #carnet ul li {
+        border-radius: 20px;
+        background-color: white;
+        list-style: none;
+        line-height: 0.75em;
+        float: left;
         width: 200px;
-        display: table; }
+        clear: both; }
+        html body #carnet ul li span .adress {
+          line-height: 2em;
+          width: 200px;
+          display: table; }
+        html body #carnet ul li span .nom {
+          line-height: 2em;
+          width: 200px;
+          display: table;
+          color: #6495ed;
+          font-weight: bold;
+          font-size: 0.9em; }
         html body #carnet ul li span .activer {
           float: right;
           width: 60px; }
