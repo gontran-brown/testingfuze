@@ -5,24 +5,71 @@
 html
   body
     overflow: hidden
+    background-image: url('../documentInfuze/background.jpg')
 
     #header
       margin: 10px
       width: 400px
+      clear: both
+
       ul
+        margin: 10px 0px
+        list-style: none
+        float: left
+      #pass
+        line-height: 2em
+        background:
+          image: url('../documentInfuze/top_noir.jpg')
+          repeat: no-repeat
         li
-          list-style: none
           display: inline
+          float: left
+          margin: 0px 10px
+        a
+          text-decoration: none
+          float: left
+          cursor: pointer
+        span
+          margin: 0 10px 0 10px
+          padding: 1px 8px 5px 18px
+          position: relative
+          float: left
+
+        .retour
+          width: 100px
+          height: 64px
+          background:
+            image: url('../documentInfuze/bouton_retour.png')
+            repeat: no-repeat
+
+
+        .valider
+          width: 127px
+          height: 64px
+          background:
+            image: url('../documentInfuze/bouton_valider.png')
+            repeat: no-repeat
+
+
+    .class
+      margin: 0 auto
+      position: relative
+      clear: both
+      width: 400px
 
     #carnet
       float: left
       margin: 10px
+      clear: both
 
       ul
         li
           border-radius: 30px
           box-shadow: 2px 2px 2px grey
-          background-color: #FFFFFF
+          background:
+            image: url('../documentInfuze/fond_coordonee.jpg')
+            repeat: no-repeat
+
           list-style: none
           text-align: center
           line-height: 0.75em
@@ -49,18 +96,21 @@ html
             font-weight: bold
             font-size: 0.90em
 
-            &:active
-              float: left
-            &:after
-              float: right
-
           .activer
             float: right
-            width: 100px
+            background:
+              image: url('../documentInfuze/bouton_trouver_on.png')
+              repeat: no-repeat
+            width: 151px
+            height: 50px
     #footer
       margin: 10px
       width: 400px
+      position: absolute
       ul
+        background:
+          image: url("../documentInfuze/footer.png")
+          repeat: no-repeat
         li
           list-style: none
           text-align: center

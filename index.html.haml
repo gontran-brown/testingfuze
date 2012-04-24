@@ -11,14 +11,14 @@
 
   %body
     #header
-      %ul
+      %ul#pass
         %li
-          %a{href:"#"} retour
+          %a.retour{hre: "#"} retour
         %li
           %span
             PassVIP
         %li
-          %a{href: "#"} Valider
+          %a.valider{href: "#"} valider
       %ul
         %li
           /image
@@ -26,32 +26,33 @@
           %span Trouvez dans mes contacts
           /titre
 
-    #carnet
-      %ul
-        %li
-          %span.nom
-            Michel Dupon
-          %span.adress
-            adresse
-          %span.activer
-            On
-        %li
-          %span.nom
-            karine lavoux
-          %span.adress
-            adresse
-          %span.activer
-            On
+    .classe
+      #carnet
+        %ul
+          %li
+            %span.nom
+              Michel Dupon
+            %span.adress
+              adresse
+            %span.activer
+              On
+          %li
+            %span.nom
+              karine lavoux
+            %span.adress
+              adresse
+            %span.activer
+              On
 
-    #footer
-      %ul
-        %li
-          %input.button.message{type: "button", name: "message", onclick:"javscript:windows.open()"}
-        %li
-          %input.button.carte{type: "button", name: "cartes", onclick: "javascript:windows.open()"}
-        %li
-          %input.button.compte{type: "button", name: "compte", onclick: "javascript:windows.open()"}
-        %li
-          %input.button.lieu{type: "button", name: "lieu", onclick: "javascript:windows.open()"}
-        %li
-          %input.button.scan{type: "button", name: "scan", onclick: "javascript:windows.open()"}
+      #footer
+      /  %ul
+      /    %li
+      /      %input.button.message{type: "button", name: "message", onclick:"javscript:windows.open()"}
+      /    %li
+      /      %input.button.carte{type: "button", name: "cartes", onclick: "javascript:windows.open()"}
+      /    %li
+      /       %input.button.compte{type: "button", name: "compte", onclick: "javascript:windows.open()"}
+      /     %li
+      /       %input.button.lieu{type: "button", name: "lieu", onclick: "javascript:windows.open()"}
+      /     %li
+      /      %input.button.scan{type: "button", name: "scan", onclick: "javascript:windows.open()"}

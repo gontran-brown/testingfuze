@@ -3,20 +3,57 @@
   padding: 0; }
 
 html body {
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: url("../documentInfuze/background.jpg"); }
   html body #header {
     margin: 10px;
-    width: 400px; }
-    html body #header ul li {
+    width: 400px;
+    clear: both; }
+    html body #header ul {
+      margin: 10px 0px;
       list-style: none;
-      display: inline; }
+      float: left; }
+    html body #header #pass {
+      line-height: 2em;
+      background-image: url("../documentInfuze/top_noir.jpg");
+      background-repeat: no-repeat; }
+      html body #header #pass li {
+        display: inline;
+        float: left;
+        margin: 0px 10px; }
+      html body #header #pass a {
+        text-decoration: none;
+        float: left;
+        cursor: pointer; }
+      html body #header #pass span {
+        margin: 0 10px 0 10px;
+        padding: 1px 8px 5px 18px;
+        position: relative;
+        float: left; }
+      html body #header #pass .retour {
+        width: 100px;
+        height: 64px;
+        background-image: url("../documentInfuze/bouton_retour.png");
+        background-repeat: no-repeat; }
+      html body #header #pass .valider {
+        width: 127px;
+        height: 64px;
+        background-image: url("../documentInfuze/bouton_valider.png");
+        background-repeat: no-repeat; }
+  html body .class {
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+    width: 400px; }
   html body #carnet {
     float: left;
-    margin: 10px; }
+    margin: 10px;
+    clear: both; }
     html body #carnet ul li {
       border-radius: 30px;
       box-shadow: 2px 2px 2px grey;
-      background-color: white;
+      background-image: url("../documentInfuze/fond_coordonee.jpg");
+      background-repeat: no-repeat;
       list-style: none;
       text-align: center;
       line-height: 0.75em;
@@ -39,19 +76,22 @@ html body {
         color: #6495ed;
         font-weight: bold;
         font-size: 0.9em; }
-        html body #carnet ul li .nom:active {
-          float: left; }
-        html body #carnet ul li .nom:after {
-          float: right; }
       html body #carnet ul li .activer {
         float: right;
-        width: 100px; }
+        background-image: url("../documentInfuze/bouton_trouver_on.png");
+        background-repeat: no-repeat;
+        width: 151px;
+        height: 50px; }
   html body #footer {
     margin: 10px;
-    width: 400px; }
-    html body #footer ul li {
-      list-style: none;
-      text-align: center;
-      display: inline; }
-      html body #footer ul li .button {
-        width: 76px; }
+    width: 400px;
+    position: absolute; }
+    html body #footer ul {
+      background-image: url("../documentInfuze/footer.png");
+      background-repeat: no-repeat; }
+      html body #footer ul li {
+        list-style: none;
+        text-align: center;
+        display: inline; }
+        html body #footer ul li .button {
+          width: 76px; }

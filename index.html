@@ -10,9 +10,9 @@
   </head>
   <body>
     <div id='header'>
-      <ul>
+      <ul id='pass'>
         <li>
-          <a href='#'>retour</a>
+          <a class='retour' hre='#'>retour</a>
         </li>
         <li>
           <span>
@@ -20,7 +20,7 @@
           </span>
         </li>
         <li>
-          <a href='#'>Valider</a>
+          <a class='valider' href='#'>valider</a>
         </li>
       </ul>
       <ul>
@@ -33,50 +33,45 @@
         </li>
       </ul>
     </div>
-    <div id='carnet'>
-      <ul>
-        <li>
-          <span class='nom'>
-            Michel Dupon
-          </span>
-          <span class='adress'>
-            adresse
-          </span>
-          <span class='activer'>
-            On
-          </span>
-        </li>
-        <li>
-          <span class='nom'>
-            karine lavoux
-          </span>
-          <span class='adress'>
-            adresse
-          </span>
-          <span class='activer'>
-            On
-          </span>
-        </li>
-      </ul>
-    </div>
-    <div id='footer'>
-      <ul>
-        <li>
-          <input class='button' name='message' onclick='javscript:windows.open()' type='button' />
-        </li>
-        <li>
-          <input class='button' name='cartes' onclick='javascript:windows.open()' type='button' />
-        </li>
-        <li>
-          <input class='button' name='compte' onclick='javascript:windows.open()' type='button' />
-        </li>
-        <li>
-          <input class='button' name='lieu' onclick='javascript:windows.open()' type='button' />
-        </li>
-        <li>
-          <input class='button' name='scan' onclick='javascript:windows.open()' type='button' />
-        </li>
-      </ul>
+    <div class='classe'>
+      <div id='carnet'>
+        <ul>
+          <li>
+            <span class='nom'>
+              Michel Dupon
+            </span>
+            <span class='adress'>
+              adresse
+            </span>
+            <span class='activer'>
+              On
+            </span>
+          </li>
+          <li>
+            <span class='nom'>
+              karine lavoux
+            </span>
+            <span class='adress'>
+              adresse
+            </span>
+            <span class='activer'>
+              On
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div id='footer'></div>
+      <!-- %ul -->
+      <!-- %li -->
+      <!-- %input.button.message{type: "button", name: "message", onclick:"javscript:windows.open()"} -->
+      <!-- %li -->
+      <!-- %input.button.carte{type: "button", name: "cartes", onclick: "javascript:windows.open()"} -->
+      <!-- %li -->
+      <!-- %input.button.compte{type: "button", name: "compte", onclick: "javascript:windows.open()"} -->
+      <!-- %li -->
+      <!-- %input.button.lieu{type: "button", name: "lieu", onclick: "javascript:windows.open()"} -->
+      <!-- %li -->
+      <!-- %input.button.scan{type: "button", name: "scan", onclick: "javascript:windows.open()"} -->
     </div>
   </body>
 </html>
