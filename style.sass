@@ -19,12 +19,13 @@ html
       #pass
         line-height: 2em
         background:
-          image: url('../documentInfuze/top_noir.jpg')
+          image: url('../documentInfuze/top_noir.png')
           repeat: no-repeat
         li
           display: inline
           float: left
           margin: 0px 10px
+          list-style: none
         a
           text-decoration: none
           float: left
@@ -106,15 +107,46 @@ html
     #footer
       margin: 10px
       width: 400px
-      position: absolute
+      clear: both
+      float: left
+      height: 70px
+      background:
+        image: url("../documentInfuze/footer.png")
+        repeat: no-repeat
+        position: 0px 0px
       ul
-        background:
-          image: url("../documentInfuze/footer.png")
-          repeat: no-repeat
+        height: 70px
         li
           list-style: none
-          text-align: center
           display: inline
-
-          .button
-            width: 76px
+          margin: 0
+          padding: 0
+          a
+            text-decoration: none
+            position: absolute
+            display: block
+            height: 64px
+            width: 80px
+            margin: 0
+            padding: 0
+          span
+            text-indent: -5000px
+            display: inline-block
+        .message
+          background-position: 2px 0px
+        .carte
+          background-position: -89px 0px
+          a
+            left: 86px
+        .compte
+          background-position: -176px 0px
+          a
+            left: 167px
+        .lieu
+          background-position: -263px 0px
+          a
+            left: 247px
+        .scan
+          background-position: -330px 0px
+          a
+            left: 329px

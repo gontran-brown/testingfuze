@@ -15,12 +15,13 @@ html body {
       float: left; }
     html body #header #pass {
       line-height: 2em;
-      background-image: url("../documentInfuze/top_noir.jpg");
+      background-image: url("../documentInfuze/top_noir.png");
       background-repeat: no-repeat; }
       html body #header #pass li {
         display: inline;
         float: left;
-        margin: 0px 10px; }
+        margin: 0px 10px;
+        list-style: none; }
       html body #header #pass a {
         text-decoration: none;
         float: left;
@@ -85,13 +86,45 @@ html body {
   html body #footer {
     margin: 10px;
     width: 400px;
-    position: absolute; }
+    clear: both;
+    float: left;
+    height: 70px;
+    background-image: url("../documentInfuze/footer.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px; }
     html body #footer ul {
-      background-image: url("../documentInfuze/footer.png");
-      background-repeat: no-repeat; }
+      height: 70px; }
       html body #footer ul li {
         list-style: none;
-        text-align: center;
-        display: inline; }
-        html body #footer ul li .button {
-          width: 76px; }
+        display: inline;
+        margin: 0;
+        padding: 0; }
+        html body #footer ul li a {
+          text-decoration: none;
+          position: absolute;
+          display: block;
+          height: 64px;
+          width: 80px;
+          margin: 0;
+          padding: 0; }
+        html body #footer ul li span {
+          text-indent: -5000px;
+          display: inline-block; }
+      html body #footer ul .message {
+        background-position: 2px 0px; }
+      html body #footer ul .carte {
+        background-position: -89px 0px; }
+        html body #footer ul .carte a {
+          left: 86px; }
+      html body #footer ul .compte {
+        background-position: -176px 0px; }
+        html body #footer ul .compte a {
+          left: 167px; }
+      html body #footer ul .lieu {
+        background-position: -263px 0px; }
+        html body #footer ul .lieu a {
+          left: 247px; }
+      html body #footer ul .scan {
+        background-position: -330px 0px; }
+        html body #footer ul .scan a {
+          left: 329px; }
