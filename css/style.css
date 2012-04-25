@@ -3,7 +3,6 @@
   padding: 0; }
 
 html body {
-  overflow: hidden;
   background-image: url("../documentInfuze/background.jpg"); }
   html body #header {
     margin: 10px;
@@ -12,25 +11,40 @@ html body {
     html body #header ul {
       margin: 10px 0px;
       list-style: none;
-      float: left; }
+      float: left;
+      width: 400px; }
     html body #header #pass {
       line-height: 2em;
+      height: 77px;
       background-image: url("../documentInfuze/top_noir.png");
       background-repeat: no-repeat; }
       html body #header #pass li {
         display: inline;
         float: left;
-        margin: 0px 10px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        margin-top: 12px;
         list-style: none; }
       html body #header #pass a {
         text-decoration: none;
         float: left;
-        cursor: pointer; }
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        display: block;
+        height: 64px;
+        width: 80px;
+        margin: 0;
+        padding: 0;
+        text-indent: -5000px; }
       html body #header #pass span {
         margin: 0 10px 0 10px;
         padding: 1px 8px 5px 18px;
         position: relative;
         float: left; }
+      html body #header #pass .vip {
+        left: 105px;
+        color: white; }
       html body #header #pass .retour {
         width: 100px;
         height: 64px;
@@ -39,8 +53,21 @@ html body {
       html body #header #pass .valider {
         width: 127px;
         height: 64px;
+        left: 280px;
         background-image: url("../documentInfuze/bouton_valider.png");
         background-repeat: no-repeat; }
+    html body #header #popup {
+      width: 400px;
+      line-height: 2em; }
+      html body #header #popup li {
+        line-height: 75px; }
+      html body #header #popup span {
+        float: left;
+        left: 105px;
+        background-image: url("../documentInfuze/contact_icon.png");
+        background-repeat: no-repeat;
+        background-position: 10px 0px;
+        color: white; }
   html body .class {
     margin: 0 auto;
     position: relative;
@@ -51,35 +78,30 @@ html body {
     margin: 10px;
     clear: both; }
     html body #carnet ul li {
-      border-radius: 30px;
-      box-shadow: 2px 2px 2px grey;
-      background-image: url("../documentInfuze/fond_coordonee.jpg");
+      background-image: url("../documentInfuze/fond_coordonee.png");
       background-repeat: no-repeat;
       list-style: none;
       text-align: center;
-      line-height: 0.75em;
       float: left;
       width: 400px;
-      clear: both;
-      margin-bottom: 3px;
-      margin-top: 3px; }
+      clear: both; }
       html body #carnet ul li span {
         padding: 2px;
         margin: 3px; }
       html body #carnet ul li .adress {
         line-height: 0.5em;
         width: 200px;
-        display: table; }
+        float: left; }
       html body #carnet ul li .nom {
         line-height: 0.5em;
         width: 200px;
-        display: table;
         color: #6495ed;
         font-weight: bold;
-        font-size: 0.9em; }
+        font-size: 0.9em;
+        float: left; }
       html body #carnet ul li .activer {
-        float: right;
-        background-image: url("../documentInfuze/bouton_trouver_on.png");
+        float: left;
+        background-image: url("../documentInfuze/bouton_trouver_on2.png");
         background-repeat: no-repeat;
         width: 151px;
         height: 50px; }

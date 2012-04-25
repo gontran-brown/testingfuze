@@ -4,7 +4,6 @@
 
 html
   body
-    overflow: hidden
     background-image: url('../documentInfuze/background.jpg')
 
     #header
@@ -16,25 +15,43 @@ html
         margin: 10px 0px
         list-style: none
         float: left
+        width: 400px
       #pass
         line-height: 2em
+        height: 77px
         background:
           image: url('../documentInfuze/top_noir.png')
           repeat: no-repeat
         li
           display: inline
           float: left
-          margin: 0px 10px
+          margin:
+            bottom: 0px
+            left: 10px
+            top: 12px
           list-style: none
         a
           text-decoration: none
           float: left
           cursor: pointer
+          text-decoration: none
+          position: absolute
+          display: block
+          height: 64px
+          width: 80px
+          margin: 0
+          padding: 0
+          text-indent: -5000px
+
         span
           margin: 0 10px 0 10px
           padding: 1px 8px 5px 18px
           position: relative
           float: left
+
+        .vip
+          left: 105px
+          color: #fff
 
         .retour
           width: 100px
@@ -43,13 +60,27 @@ html
             image: url('../documentInfuze/bouton_retour.png')
             repeat: no-repeat
 
-
         .valider
           width: 127px
           height: 64px
+          left: 280px
           background:
             image: url('../documentInfuze/bouton_valider.png')
             repeat: no-repeat
+
+      #popup
+        width: 400px
+        line-height: 2em
+        li
+          line-height: 75px
+        span
+          float: left
+          left: 105px
+          background:
+            image: url("../documentInfuze/contact_icon.png")
+            repeat: no-repeat
+            position: 10px 0px
+          color: #fff
 
 
     .class
@@ -65,42 +96,34 @@ html
 
       ul
         li
-          border-radius: 30px
-          box-shadow: 2px 2px 2px grey
           background:
-            image: url('../documentInfuze/fond_coordonee.jpg')
+            image: url('../documentInfuze/fond_coordonee.png')
             repeat: no-repeat
-
           list-style: none
           text-align: center
-          line-height: 0.75em
           float: left
           width: 400px
           clear: both
-          margin:
-            bottom: 3px
-            top: 3px
-
           span
             padding: 2px
             margin: 3px
           .adress
             line-height: 0.5em
             width: 200px
-            display: table
+            float: left
 
           .nom
             line-height: 0.5em
             width: 200px
-            display: table
             color: #6495ED
             font-weight: bold
             font-size: 0.90em
+            float: left
 
           .activer
-            float: right
+            float: left
             background:
-              image: url('../documentInfuze/bouton_trouver_on.png')
+              image: url('../documentInfuze/bouton_trouver_on2.png')
               repeat: no-repeat
             width: 151px
             height: 50px
