@@ -1,3 +1,7 @@
+@font-face: {
+  font-family: "segoepr";
+  src: url("../documentInfuze/segoesc.ttf"); }
+
 * {
   margin: 0;
   padding: 0; }
@@ -55,8 +59,11 @@ html body {
     html body #header #popup {
       width: 400px;
       line-height: 2em; }
+      html body #header #popup li:nth-child(1) {
+        line-height: 64px; }
+      html body #header #popup li:nth-child(2) {
+        line-height: 49px; }
       html body #header #popup li {
-        line-height: 66px;
         width: 400px;
         color: white;
         font-size: 1.1em; }
@@ -80,8 +87,13 @@ html body {
     width: 400px; }
   html body #carnet {
     float: left;
-    margin: 2px 10px;
-    clear: both; }
+    margin: 0px 10px;
+    clear: both;
+    height: auto;
+    padding-bottom: 5px;
+    background: white; }
+    html body #carnet ul li:last-child {
+      margin-bottom: 3px; }
     html body #carnet ul li {
       background-image: url("../documentInfuze/fond_coordonee.png");
       background-repeat: no-repeat;
@@ -90,6 +102,11 @@ html body {
       float: left;
       width: 400px;
       clear: both; }
+      html body #carnet ul li div {
+        height: 50px;
+        background-image: url("../documentInfuze/bouton_on.png");
+        background-repeat: no-repeat;
+        background-position: 255px 4px; }
       html body #carnet ul li span {
         padding: 2px;
         margin: 3px; }
@@ -104,14 +121,8 @@ html body {
         font-weight: bold;
         font-size: 0.9em;
         float: left; }
-      html body #carnet ul li .activer {
-        float: left;
-        background-image: url("../documentInfuze/bouton_trouver_on2.png");
-        background-repeat: no-repeat;
-        width: 151px;
-        height: 50px; }
   html body #footer {
-    margin: 2px 10px;
+    margin: 0px 10px;
     width: 400px;
     clear: both;
     float: left;
@@ -137,21 +148,11 @@ html body {
         html body #footer ul li span {
           text-indent: -5000px;
           display: inline-block; }
-      html body #footer ul .message {
-        background-position: 2px 0px; }
-      html body #footer ul .carte {
-        background-position: -89px 0px; }
-        html body #footer ul .carte a {
-          left: 86px; }
-      html body #footer ul .compte {
-        background-position: -176px 0px; }
-        html body #footer ul .compte a {
-          left: 167px; }
-      html body #footer ul .lieu {
-        background-position: -263px 0px; }
-        html body #footer ul .lieu a {
-          left: 247px; }
-      html body #footer ul .scan {
-        background-position: -330px 0px; }
-        html body #footer ul .scan a {
-          left: 329px; }
+      html body #footer ul .carte a {
+        left: 86px; }
+      html body #footer ul .compte a {
+        left: 167px; }
+      html body #footer ul .lieu a {
+        left: 247px; }
+      html body #footer ul .scan a {
+        left: 329px; }
