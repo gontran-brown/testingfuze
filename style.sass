@@ -52,6 +52,10 @@ html
         .vip
           left: 105px
           color: #fff
+          font-size: 1.3em
+          &:after
+            content: "VIP"
+            font-weight: bold
 
         .retour
           width: 100px
@@ -147,6 +151,57 @@ html
             font-size: 0.90em
             float: left
 
+    #banniere
+      height: 280px
+      width: 400px
+      margin-left: 10px
+      clear: both
+      background:
+        image: url("../documentInfuze/connexion.png")
+        repeat: no-repeat
+
+    #connexion
+      width: 400px
+      clear: both
+      height: 250px
+      margin-left: 10px
+      background:
+        image: url("../documentInfuze/fond_connexion.png")
+        repeat: no-repeat
+      ul
+        list-style: none
+
+        li
+          clear: both
+          width: 400px
+          height: 65px
+          a
+            text-decoration: none
+
+          div
+            height: 65px
+            text-indent: -5000px
+
+        li:nth-child(1)
+          padding-top: 35px
+          div
+            background:
+              image: url("../documentInfuze/bouton_facebook.png")
+              repeat: no-repeat
+
+        li:nth-child(2)
+          padding-top: 5px
+          div
+            background:
+              image: url("../documentInfuze/bouton_inscrir_connexion.png")
+              repeat: no-repeat
+
+        li:last-child
+          padding-top: 5px
+          div
+            background:
+              image: url("../documentInfuze/bouton_connecter.png")
+              repeat: no-repeat
     #footer
       margin: 0px 10px
       width: 400px

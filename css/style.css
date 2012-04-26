@@ -44,7 +44,11 @@ html body {
         float: left; }
       html body #header #pass .vip {
         left: 105px;
-        color: white; }
+        color: white;
+        font-size: 1.3em; }
+        html body #header #pass .vip:after {
+          content: "VIP";
+          font-weight: bold; }
       html body #header #pass .retour {
         width: 100px;
         height: 64px;
@@ -121,6 +125,46 @@ html body {
         font-weight: bold;
         font-size: 0.9em;
         float: left; }
+  html body #banniere {
+    height: 280px;
+    width: 400px;
+    margin-left: 10px;
+    clear: both;
+    background-image: url("../documentInfuze/connexion.png");
+    background-repeat: no-repeat; }
+  html body #connexion {
+    width: 400px;
+    clear: both;
+    height: 250px;
+    margin-left: 10px;
+    background-image: url("../documentInfuze/fond_connexion.png");
+    background-repeat: no-repeat; }
+    html body #connexion ul {
+      list-style: none; }
+      html body #connexion ul li {
+        clear: both;
+        width: 400px;
+        height: 65px; }
+        html body #connexion ul li a {
+          text-decoration: none; }
+        html body #connexion ul li div {
+          height: 65px;
+          text-indent: -5000px; }
+      html body #connexion ul li:nth-child(1) {
+        padding-top: 35px; }
+        html body #connexion ul li:nth-child(1) div {
+          background-image: url("../documentInfuze/bouton_facebook.png");
+          background-repeat: no-repeat; }
+      html body #connexion ul li:nth-child(2) {
+        padding-top: 5px; }
+        html body #connexion ul li:nth-child(2) div {
+          background-image: url("../documentInfuze/bouton_inscrir_connexion.png");
+          background-repeat: no-repeat; }
+      html body #connexion ul li:last-child {
+        padding-top: 5px; }
+        html body #connexion ul li:last-child div {
+          background-image: url("../documentInfuze/bouton_connecter.png");
+          background-repeat: no-repeat; }
   html body #footer {
     margin: 0px 10px;
     width: 400px;

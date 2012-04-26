@@ -20,14 +20,8 @@
       #connexion
         %ul
           %li
-            %a{href: "#"}
-              %div
-                se connecter a facebook
+            %div
           %li
-            %a{href: "#"}
-              %div
-                s'inscrire
+            %div
           %li
-            %a{href: "#"}
-              %div
-                se connecter
+            %div
