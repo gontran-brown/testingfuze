@@ -1,0 +1,58 @@
+!!! Strict
+%html{xmlns: "http://www.w3.org/1999/xhtml", lang: "fr", "xml:lang" => "fr"}
+  %head
+    %meta{"http-equiv" => "Content-Type", content: "text/html; charset=utf-8"}
+    %meta{name: "title", content: "montagne-neige"}
+    %meta{name: "autor", content: "Soumia ADJIR"}
+    %meta{name: "description", content: "Une avanche d'info sur les montagnes"}
+    %meta{name: "keybords", content:""}
+
+    %link{rel: "stylesheet", href: "../css/style.css", type: "text/css"}
+
+  %body
+    #header
+      %ul#pass
+        %li
+          %span.vip
+            Pass
+
+    .classe
+      .etape
+        %span
+          Étape 1/3
+      #Etape_inscription
+        %form
+          %div.genre
+            %input{type: "radio"}
+            %imput{type: "radio"}
+          %div.information
+            %input{type: "text"}
+            %input{type: "text"}
+          %div.complement
+            %input{type: "email", value: "Identifiant (email)"}
+            %input{type: "password", value: "Mot de passe"}
+            %input{type: "date", value: "Date de naissance"}
+            %input{type: ""}
+            %input{type: "tel", value: "Téléphone (facultatif)"}
+          %div.validation
+            %input{type: "submit"}
+            %span
+              Encliquant sur le bouton "Valider", je confirme avoir pris connaissance des condition générales d'utilisation (
+              %a{href: "#"}
+                plus d'infos
+              )
+
+      #connexion
+        %ul
+          %li
+            %a{href: "#"}
+              %div
+                se connecter a facebook
+          %li
+            %a{href: "pages/inscription.html"}
+              %div
+                s'inscrire
+          %li
+            %a{href: "#"}
+              %div
+                se connecter
