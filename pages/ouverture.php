@@ -32,4 +32,6 @@ if ($nopage && !file_existes("pages/$page.php")){
     $page = $arraypage[$pageactive]["file"];
     $nopage = false;
 }
+var_dump($page, "je suis dans ");
+var_dump($pageactive);
 ?>

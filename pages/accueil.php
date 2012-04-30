@@ -2,7 +2,7 @@
       <div id='connexion'>
         <ul>
           <li>
-            <a href='#'>
+            <a href='index.php?facebook'>
               <div>
                 se connecter a facebook
               </div>
@@ -16,7 +16,7 @@
             </a>
           </li>
           <li>
-            <a href='#'>
+            <a href='index.php?page=connexion'>
               <div>
                 se connecter
               </div>
