@@ -15,26 +15,36 @@
           %span.vip
             Pass
 
-    .classe
+    .class
       .etape
         %span
           Étape 1/3
       #Etape_inscription
         %form
           %div.genre
-            %input{type: "radio"}
-            %imput{type: "radio"}
+            %span
+              %input{type: "radio", name: "sexe", value: "femme"}
+            %sapn
+              %imput{type: "radio", name: "sexe", value: "homme"}
           %div.information
-            %input{type: "text"}
-            %input{type: "text"}
+            %span
+              %input{type: "text", value: "nom"}
+            %span
+              %input{type: "text", value: "prenom"}
           %div.complement
-            %input{type: "email", value: "Identifiant (email)"}
-            %input{type: "password", value: "Mot de passe"}
-            %input{type: "date", value: "Date de naissance"}
-            %input{type: ""}
-            %input{type: "tel", value: "Téléphone (facultatif)"}
+            %span
+              %input{type: "email", value: "Identifiant (email)"}
+            %span
+              %input{type: "password", value: "Mot de passe"}
+            %span
+              %input{type: "date", value: "Date de naissance"}
+            %span
+              %input{type: ""}
+            %span
+              %input{type: "tel", value: "Téléphone (facultatif)"}
           %div.validation
-            %input{type: "submit"}
+            %span
+              %input{type: "submit"}
             %span
               Encliquant sur le bouton "Valider", je confirme avoir pris connaissance des condition générales d'utilisation (
               %a{href: "#"}

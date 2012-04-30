@@ -103,10 +103,16 @@ html
 
 
     .class
-      margin: 0 auto
+      margin: 0 10px
       position: relative
       clear: both
       width: 400px
+      float: left
+
+      .etape
+        background:
+          image: url("../documentInfuze/bar_blanche.png")
+          repeat: no-repeat
 
     #carnet
       float: left
@@ -150,6 +156,70 @@ html
             font-weight: bold
             font-size: 0.90em
             float: left
+
+    #Etape_inscription
+      width: 400px
+      form
+        width: 380px
+        float: left
+
+        .genre
+          span
+            clear: both
+          &:nth-child(1)
+            background:
+              image: url("../documentInfuze/femme.png")
+              repeat: no-repeat
+          &:nth-child(n)
+            background:
+              image: url("../documentInfuze/homme.png")
+              repeat: no-repeat
+
+        .information
+          height: 40px
+          border-radius: 15px 15px 0 0
+            background:
+              image: url("../documentInfuze/formulaire.png")
+              repeat: no-repeat
+
+          &:first-child
+            width: 370px
+
+        .complement
+          background-color: #fff
+          width: 380px
+          span
+            float: left
+            width: 380px
+            clear: both
+            height: 30px
+            div
+              float: right
+          span:nth-child(1)
+            background:
+              image: url("../documentInfuze/contact.png")
+              repeat: no-repeat
+          span:nth-child(2)
+            background:
+              image: url("../documentInfuze/password.png")
+              repeat: no-repeat
+
+          span:nth-child(3)
+            background:
+              image: url("../documentInfuze/birthday.png")
+              repeat: no-repeat
+
+          span:nth-child(4)
+            background:
+              image: url("../documentInfuze/loupe.png")
+              repeat: no-repeat
+
+          span:nth-child(5)
+            background:
+              image: url("../documentInfuze/telephone.png")
+              repeat: no-repeat
+
+        .validation
 
     #banniere
       height: 280px
