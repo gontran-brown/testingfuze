@@ -85,10 +85,49 @@ html body {
           background-image: url("../documentInfuze/selection.png");
           background-repeat: no-repeat; }
   html body .class {
-    margin: 0 auto;
+    margin: 0 10px;
     position: relative;
     clear: both;
     width: 400px; }
+    html body .class .etape {
+      clear: both;
+      width: 390px;
+      height: 30px;
+      background-image: url("../documentInfuze/bar_blanche.png");
+      background-repeat: no-repeat; }
+    html body .class .complement {
+      background-color: white; }
+      html body .class .complement div {
+        width: 380px;
+        display: block;
+        height: 41px; }
+        html body .class .complement div input {
+          margin-top: 10px;
+          margin-left: 100px; }
+        html body .class .complement div:nth-child(1) {
+          background-image: url("../documentInfuze/contact.png");
+          background-repeat: no-repeat; }
+        html body .class .complement div:nth-child(2) {
+          background-image: url("../documentInfuze/password.png");
+          background-repeat: no-repeat; }
+        html body .class .complement div:nth-child(3) {
+          background-image: url("../documentInfuze/birthday.png");
+          background-repeat: no-repeat; }
+        html body .class .complement div:nth-child(4) {
+          background-image: url("../documentInfuze/loupe.png");
+          background-repeat: no-repeat; }
+        html body .class .complement div:nth-child(5) {
+          background-image: url("../documentInfuze/telephone.png");
+          background-repeat: no-repeat; }
+    html body .class .validation div {
+      margin-top: 5px;
+      margin-left: 17px; }
+    html body .class .validation span {
+      margin-left: 17px;
+      color: white; }
+      html body .class .validation span a {
+        text-decoration: none;
+        font-weight: bold; }
   html body #carnet {
     float: left;
     margin: 0px 10px;
@@ -151,7 +190,7 @@ html body {
           height: 65px;
           text-indent: -5000px; }
       html body #connexion ul li:nth-child(1) {
-        padding-top: 35px; }
+        padding-top: 32px; }
         html body #connexion ul li:nth-child(1) div {
           background-image: url("../documentInfuze/bouton_facebook.png");
           background-repeat: no-repeat; }

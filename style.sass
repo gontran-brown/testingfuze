@@ -103,10 +103,61 @@ html
 
 
     .class
-      margin: 0 auto
+      margin: 0 10px
       position: relative
       clear: both
       width: 400px
+
+      .etape
+        clear: both
+        width: 390px
+        height: 30px
+        background:
+          image: url("../documentInfuze/bar_blanche.png")
+          repeat: no-repeat
+
+      .complement
+        background-color: #fff
+        div
+          width: 380px
+          display: block
+          height: 41px
+          input
+            margin:
+              top: 10px
+              left: 100px
+          &:nth-child(1)
+            background:
+              image: url("../documentInfuze/contact.png")
+              repeat: no-repeat
+          &:nth-child(2)
+            background:
+              image: url("../documentInfuze/password.png")
+              repeat: no-repeat
+          &:nth-child(3)
+            background:
+              image: url("../documentInfuze/birthday.png")
+              repeat: no-repeat
+          &:nth-child(4)
+            background:
+              image: url("../documentInfuze/loupe.png")
+              repeat: no-repeat
+          &:nth-child(5)
+            background:
+              image: url("../documentInfuze/telephone.png")
+              repeat: no-repeat
+
+      .validation
+        div
+          margin:
+            top: 5px
+            left: 17px
+        span
+          margin-left: 17px
+          color: #fff
+          a
+            text-decoration: none
+            font-weight: bold
 
     #carnet
       float: left
