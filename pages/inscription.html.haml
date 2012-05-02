@@ -19,11 +19,15 @@
       .etape
         %span
           Étape 1/3
+      .slogan
+        %span
+          Inscrivre-vous dès maintenant
       #Etape_inscription
-        %form
+        %form#formulaire_inscription
           %div.genre
-            %input{type: "radio", value: "femme", name: "sexe"}
-            %input{type: "radio", value: "homme", name: "sexe"}
+            %input{type:"image", src:"../documentInfuze/femme.png", onselect: ""}
+            %input{type: "image", src: "../documentInfuze/homme.png", onselect: ""}
+            %input{type: "hidden", value:"", name: "sexe"}
           %div.information
             %input{type: "text"}
             %input{type: "text"}

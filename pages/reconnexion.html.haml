@@ -1,0 +1,46 @@
+!!! Strict
+%html{xmlns: "http://www.w3.org/1999/xhtml", lang: "fr", "xml:lang" => "fr"}
+  %head
+    %meta{"http-equiv" => "Content-Type", content: "text/html; charset=utf-8"}
+    %meta{name: "autor", content: "Soumia ADJIR"}
+    %meta{name: "description", content: "Une avanche d'info sur les montagnes"}
+    %meta{name: "keybords", content:""}
+
+    %link{rel: "stylesheet", href: "../css/style.css", type: "text/css"}
+
+  %body
+    #header
+      %ul#pass
+        %li
+          %span.vip
+            Pass
+
+    .class
+      .bon_plan
+
+      #Etape_inscription
+        %form#formulaire_reconnexion
+          %span
+            Connectez-vous
+          %div.complement
+            %div
+              %input{type: "email", value: "Identifiant (email)"}
+            %div
+              %input{type: "password", value: "Mot de passe"}
+          %span
+            %a{href:"#"}
+              Mot de passe oublié?
+          %div.validation
+            %div
+              %input{type: "image", src: "../documentInfuze/valider_inscription.png"}
+
+          #connexion
+            %ul
+              %li
+                %a{href: "#"}
+                  %div
+                    se connecter a facebook
+              %li
+                %a{href: "pages/inscription.html"}
+                  %div
+                    creer un compte
