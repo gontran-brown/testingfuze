@@ -177,6 +177,9 @@ html
 
         .information
           height: 40px
+          width: 380px
+          float: left
+          clear: both
           border-radius: 15px 15px 0 0
             background:
               image: url("../documentInfuze/formulaire.png")
@@ -186,16 +189,21 @@ html
             width: 370px
 
         .complement
-          background-color: #fff
           width: 380px
           span
             float: left
             width: 380px
             clear: both
-            height: 30px
-            div
-              float: right
+            height: 41px
+            background-color: #fff
+            input
+              float: left
+              left: 175px
+              position: absolute
+              vertical-align: middle
+
           span:nth-child(1)
+            border-radius: 10px 10px 0 0
             background:
               image: url("../documentInfuze/contact.png")
               repeat: no-repeat
@@ -215,11 +223,24 @@ html
               repeat: no-repeat
 
           span:nth-child(5)
+            border-radius: 0 0 10px 10px
             background:
               image: url("../documentInfuze/telephone.png")
               repeat: no-repeat
 
         .validation
+          margin: 1px 10px
+          width: 380px
+          height: 20px
+
+          span
+            color: #fff
+            input
+              margin-top: 15px
+            a
+              margin-top: 5px
+              color: #fff
+              font-weight: bold
 
     #banniere
       height: 280px

@@ -144,22 +144,29 @@ html body {
         background-repeat: no-repeat; }
       html body #Etape_inscription form .information {
         height: 40px;
+        width: 380px;
+        float: left;
+        clear: both;
         border-radius: 15px 15px 0 0;
           border-radius-background-image: url("../documentInfuze/formulaire.png");
           border-radius-background-repeat: no-repeat; }
         html body #Etape_inscription form .information:first-child {
           width: 370px; }
       html body #Etape_inscription form .complement {
-        background-color: white;
         width: 380px; }
         html body #Etape_inscription form .complement span {
           float: left;
           width: 380px;
           clear: both;
-          height: 30px; }
-          html body #Etape_inscription form .complement span div {
-            float: right; }
+          height: 41px;
+          background-color: white; }
+          html body #Etape_inscription form .complement span input {
+            float: left;
+            left: 175px;
+            position: absolute;
+            vertical-align: middle; }
         html body #Etape_inscription form .complement span:nth-child(1) {
+          border-radius: 10px 10px 0 0;
           background-image: url("../documentInfuze/contact.png");
           background-repeat: no-repeat; }
         html body #Etape_inscription form .complement span:nth-child(2) {
@@ -172,8 +179,21 @@ html body {
           background-image: url("../documentInfuze/loupe.png");
           background-repeat: no-repeat; }
         html body #Etape_inscription form .complement span:nth-child(5) {
+          border-radius: 0 0 10px 10px;
           background-image: url("../documentInfuze/telephone.png");
           background-repeat: no-repeat; }
+      html body #Etape_inscription form .validation {
+        margin: 1px 10px;
+        width: 380px;
+        height: 20px; }
+        html body #Etape_inscription form .validation span {
+          color: white; }
+          html body #Etape_inscription form .validation span input {
+            margin-top: 15px; }
+          html body #Etape_inscription form .validation span a {
+            margin-top: 5px;
+            color: white;
+            font-weight: bold; }
   html body #banniere {
     height: 280px;
     width: 400px;
