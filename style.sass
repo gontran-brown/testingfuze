@@ -1,7 +1,3 @@
-@font-face:
-  font-family: "segoepr"
-  src: url("../documentInfuze/segoesc.ttf")
-
 *
   margin: 0
   padding: 0
@@ -57,6 +53,11 @@ html
             content: "VIP"
             font-weight: bold
 
+        .titre
+          left: 70px
+          color: #fff
+          font-size: 1.3em
+
         .retour
           width: 100px
           height: 64px
@@ -65,18 +66,33 @@ html
             repeat: no-repeat
 
         .valider
-          width: 127px
-          height: 64px
-          left: 294px
+          width: 93px
+          height: 48px
+          left: 300px
           background:
             image: url('../documentInfuze/bouton_valider.png')
             repeat: no-repeat
 
+        .modifier
+          width: 93px
+          height: 48px
+          left: 290px
+          background:
+            image: url('../documentInfuze/bouton_modifier.png')
+            repeat: no-repeat
+
+    .class
+      margin: 0 10px
+      position: relative
+      clear: both
+      width: 400px
+
       #popup
         width: 400px
-        line-height: 2em
+        list-style: none
+
         li:nth-child(1)
-          line-height: 64px
+          line-height: 71px
         li:nth-child(2)
           line-height: 49px
         li
@@ -88,12 +104,13 @@ html
           span
             display: inline-block
           &:nth-child(1)
-            padding: 0 0 0 90px
+            padding-left: 90px
             float: left
             background:
               image: url("../documentInfuze/contact_icon.png")
               repeat: no-repeat
-              position: 10px 3px
+              position: 20px 6px
+              height: 75px
           &:nth-child(2)
             text-indent: -5000px
             float: left
@@ -101,18 +118,11 @@ html
               image: url("../documentInfuze/selection.png")
               repeat: no-repeat
 
-
-    .class
-      margin: 0 10px
-      position: relative
-      clear: both
-      width: 400px
-
       .etape
         clear: both
         font-size: 20px
         font-weight: bold
-        width: 395px
+        width: 399px
         height: 30px
         line-height: 1.8em
         text-align: center
@@ -120,12 +130,31 @@ html
           image: url("../documentInfuze/bar_blanche.png")
           repeat: no-repeat
 
-      .slogan
-        text-align: center
-        color: grey
+      .slogan,
+      .slogan2,
+      .slogan3
+        color: #fff
         font-size: 20px
         font-weight: bold
         line-height: 2em
+
+      .slogan
+        text-align: center
+
+      .slogan2
+        background:
+          image: url("../documentInfuze/fleche_selection.png")
+          repeat: no-repeat
+          position: 277px 6px
+
+      .slogan3
+        height: 60px
+        background:
+          image: url("../documentInfuze/fleche_mot.png")
+          repeat: no-repeat
+          position: 110px 7px
+        span
+          float: right
 
       .bon_plan
         width: 350px
@@ -139,6 +168,7 @@ html
 
       #Etape_inscription
       #formulaire_reconnexion
+        float: left
         span
           line-height: 1.2em
           color: #fff
@@ -260,9 +290,196 @@ html
               font-weight: bold
               color: #fff
 
+      #message
+        ul
+          list-style: none
+          li
+            background:
+              image: url('../documentInfuze/fond_coordonee.png')
+              repeat: no-repeat
+            height: 70px
+            div
+              float: left
+              position: relative
+              background:
+                image: url('../documentInfuze/.png')
+                repeat: no-repeat
+
+              div
+                float: left
+                left: 95px
+                width: 290px
+                height: 70px
+                background:
+                  image: url('../documentInfuze/fleche_no_active.png')
+                  repeat: no-repeat
+                  position: 230px 22px
+
+                h3
+                  background-color: #3366CC
+                  color: #fff
+                  display: inline
+
+                .soustitre
+                  font-weight: bold
+                  clear: both
+                  width: 300px
+                  line-height: 4em
+
+      #content
+        width: 400px
+        .icon
+          height: 100px
+          margin:
+            top: 20px
+            bottom: 5px
+          background:
+            image: url("../documentInfuze/fond_parainage.png")
+            repeat: no-repeat
+
+          a
+            text-decoration: none
+            float: left
+            text-decoration: none
+            text-indent: -5000px
+            width: 400px
+            height: 90px
+            background:
+              image: url("../documentInfuze/parainage.png")
+              repeat: no-repeat
+              position: 14px 10px
+
+        .choix
+          background: inherit
+          width: 400px
+          margin:
+            bottom: 3px
+
+          ul
+            list-style: none
+            background:
+              image: url('../documentInfuze/fond_coordonee.png')
+              repeat: no-repeat
+
+            li
+              background-position: 6px 6px
+              height: 62px
+
+              div
+                height: 50px
+                line-height: 3.5em
+                background:
+                  image: url("../documentInfuze/fleche.png")
+                  repeat: no-repeat
+                  position: 370px 18px
+
+                span
+                  text-align: center
+                  display: inline-block
+                  font-size: 15px
+                  font-weight: bold
+                  margin-left: 65px
+
+          &:nth-child(1)
+            ul
+              li
+                background:
+                  image: url('../documentInfuze/icon_facebook.png')
+                  repeat: no-repeat
+
+          &:nth-child(2)
+            ul
+              li
+                background:
+                  image: url('../documentInfuze/ico_contact.png')
+                  repeat: no-repeat
+
+          &:nth-child(3)
+            ul
+              li
+                background:
+                  image: url('../documentInfuze/courier.png')
+                repeat: no-repeat
+
+    #Etape_choix
+      div
+        width: 400px
+        margin:
+          bottom: 3px
+        ul
+          list-style: none
+          background:
+            image: url('../documentInfuze/fond_coordonee.png')
+            repeat: no-repeat
+          li
+            background-position: 8px 3px
+
+            div
+              height: 50px
+              background:
+                image: url("../documentInfuze/bouton_on.png")
+                repeat: no-repeat
+                position: 293px 7px
+              span
+                text-align: center
+                display: inline-block
+                font-size: 20px
+                font-weight: bold
+                line-height: 2.6em
+                margin-left: 65px
+
+        &:nth-child(1)
+          ul
+            li
+              background:
+                image: url('../documentInfuze/vigniette_resto.png')
+                repeat: no-repeat
+
+        &:nth-child(2)
+          ul
+            li
+              background:
+                image: url('../documentInfuze/vigniette_achat.png')
+                repeat: no-repeat
+
+        &:nth-child(3)
+          ul
+            li
+              background:
+                image: url('../documentInfuze/vigniette_sante.png')
+                repeat: no-repeat
+
+        &:nth-child(4)
+          ul
+            li
+              background:
+                image: url('../documentInfuze/valider_services.png')
+                repeat: no-repeat
+
+        &:nth-child(5)
+          ul
+            li
+              background:
+                image: url('../documentInfuze/vigniette_auto.png')
+                repeat: no-repeat
+
+        &:nth-child(6)
+          ul
+            li
+              background:
+                image: url('../documentInfuze/vigniette_hotel.png')
+                repeat: no-repeat
+
+        &:nth-child(7)
+          ul
+            li
+              background:
+                image: url('../documentInfuze/vigniette_maison.png')
+                repeat: no-repeat
+
+
     #carnet
       float: left
-      margin: 0px 10px
       clear: both
       height: auto
       padding-bottom: 5px
@@ -286,7 +503,7 @@ html
             background:
               image: url("../documentInfuze/bouton_on.png")
               repeat: no-repeat
-              position: 255px 4px
+              position: 293px 7px
           span
             padding: 2px
             margin: 3px
@@ -315,9 +532,6 @@ html
     #connexion
       width: 400px
       clear: both
-      height: 250px
-      margin:
-        left: 10px
       background:
         image: url("../documentInfuze/fond_connexion.png")
         repeat: no-repeat
@@ -352,13 +566,14 @@ html
               repeat: no-repeat
 
         li:last-child
-          padding-top: 5px
+          padding:
+            top: 5px
+            bottom: 10px
           div
             background:
               image: url("../documentInfuze/bouton_connecter.png")
               repeat: no-repeat
     #footer
-      margin: 0px 10px
       width: 400px
       clear: both
       float: left
@@ -385,15 +600,43 @@ html
           span
             text-indent: -5000px
             display: inline-block
+
         .carte
           a
             left: 86px
+            &:visited
+              background:
+                image: url("../documentInfuze/icon_carte.png")
+                repeat: no-repeat
+                position: 5px 2px
         .compte
           a
             left: 167px
+            &:visited
+              background:
+                image: url("../documentInfuze/icon_contact.png")
+                repeat: no-repeat
+                position: 5px 2px
         .lieu
           a
             left: 247px
+            &:visited
+              background:
+                image: url("../documentInfuze/.png")
+                repeat: no-repeat
+                position: 5px 2px
         .scan
           a
             left: 329px
+            &:visited
+              background:
+                image: url("../documentInfuze/icon_scan.png")
+                repeat: no-repeat
+                position: 5px 2px
+        .message
+          a
+            &:visited
+              background:
+                image: url("../documentInfuze/icon_message.png")
+                repeat: no-repeat
+                position: 5px 2px
