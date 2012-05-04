@@ -16,41 +16,22 @@
             %span retour
         %li
           %span.titre
-            Mes messages
+            Mes cartes
         %li
-          %a.modifier{href: "#"}
-            %span modifier
+          %a.ajouter{href: "#"}
+            %span Ajouter
     .class
-      #message
+      #recherche
+        %input{type: "text", value: "Rechercher une carte"}
+        %input{type:"image", src:"../documentInfuze/delete.png", value: "reset"}
+
+      #carte
         %ul
           %li
             %div
               %div
-                %h3
-                  titre
                 %span.soustitre
                   sous titre
-                %span
-                  texte
-
-          %li
-            %div
-              %div
-                %h3
-                  titre
-                %span.soustitre
-                  sous titre
-                %span
-                  texte
-          %li
-            %div
-              %div
-                %h3
-                  titre
-                %span.soustitre
-                  sous titre
-                %span
-                  texte
 
       #footer
         %ul
