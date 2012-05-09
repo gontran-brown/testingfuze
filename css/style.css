@@ -54,6 +54,13 @@ html body {
         height: 64px;
         background-image: url("../documentInfuze/bouton_retour.png");
         background-repeat: no-repeat; }
+      html body #header #pass .map {
+        width: 150px;
+        height: 48px;
+        left: 252px;
+        top: 10px;
+        background-image: url("../documentInfuze/bouton_list_map.png");
+        background-repeat: no-repeat; }
       html body #header #pass .valider {
         width: 93px;
         height: 48px;
@@ -458,43 +465,51 @@ html body {
   html body #Etape_choix div {
     width: 400px;
     margin-bottom: 3px; }
-    html body #Etape_choix div ul {
+    html body #Etape_choix div ul,
+    html body #Etape_recherche div ul {
       list-style: none;
       background-image: url("../documentInfuze/fond_coordonee.png");
       background-repeat: no-repeat; }
-      html body #Etape_choix div ul li {
+      html body #Etape_choix div ul li,
+      html body #Etape_recherche div ul li {
         background-position: 8px 3px; }
-        html body #Etape_choix div ul li div {
-          height: 50px;
-          background-image: url("../documentInfuze/bouton_on.png");
-          background-repeat: no-repeat;
-          background-position: 293px 7px; }
-          html body #Etape_choix div ul li div span {
+        html body #Etape_choix div ul li div,
+        html body #Etape_recherche div ul li div {
+          height: 50px; }
+          html body #Etape_choix div ul li div span,
+          html body #Etape_recherche div ul li div span {
             text-align: center;
             display: inline-block;
             font-size: 20px;
             font-weight: bold;
             line-height: 2.6em;
             margin-left: 65px; }
-    html body #Etape_choix div:nth-child(1) ul li {
+    html body #Etape_choix div:nth-child(1) ul li,
+    html body #Etape_recherche div:nth-child(1) ul li {
       background-image: url("../documentInfuze/vigniette_resto.png");
       background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(2) ul li {
+    html body #Etape_choix div:nth-child(2) ul li,
+    html body #Etape_recherche div:nth-child(2) ul li {
       background-image: url("../documentInfuze/vigniette_achat.png");
       background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(3) ul li {
+    html body #Etape_choix div:nth-child(3) ul li,
+    html body #Etape_recherche div:nth-child(3) ul li {
       background-image: url("../documentInfuze/vigniette_sante.png");
       background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(4) ul li {
+    html body #Etape_choix div:nth-child(4) ul li,
+    html body #Etape_recherche div:nth-child(4) ul li {
       background-image: url("../documentInfuze/valider_services.png");
       background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(5) ul li {
+    html body #Etape_choix div:nth-child(5) ul li,
+    html body #Etape_recherche div:nth-child(5) ul li {
       background-image: url("../documentInfuze/vigniette_auto.png");
       background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(6) ul li {
+    html body #Etape_choix div:nth-child(6) ul li,
+    html body #Etape_recherche div:nth-child(6) ul li {
       background-image: url("../documentInfuze/vigniette_hotel.png");
       background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(7) ul li {
+    html body #Etape_choix div:nth-child(7) ul li,
+    html body #Etape_recherche div:nth-child(7) ul li {
       background-image: url("../documentInfuze/vigniette_maison.png");
       background-repeat: no-repeat; }
   html body #carnet {
@@ -532,6 +547,51 @@ html body {
         font-weight: bold;
         font-size: 0.9em;
         float: left; }
+  html body #Etape_inscription {
+    width: 400px; }
+    html body #Etape_inscription form {
+      width: 380px;
+      float: left; }
+      html body #Etape_inscription form .genre span {
+        clear: both; }
+      html body #Etape_inscription form .genre:nth-child(1) {
+        background-image: url("../documentInfuze/femme.png");
+        background-repeat: no-repeat; }
+      html body #Etape_inscription form .genre:nth-child(n) {
+        background-image: url("../documentInfuze/homme.png");
+        background-repeat: no-repeat; }
+      html body #Etape_inscription form .information {
+        height: 40px;
+        border-radius: 15px 15px 0 0;
+          border-radius-background-image: url("../documentInfuze/formulaire.png");
+          border-radius-background-repeat: no-repeat; }
+        html body #Etape_inscription form .information:first-child {
+          width: 370px; }
+      html body #Etape_inscription form .complement {
+        background-color: white;
+        width: 380px; }
+        html body #Etape_inscription form .complement span {
+          float: left;
+          width: 380px;
+          clear: both;
+          height: 30px; }
+          html body #Etape_inscription form .complement span div {
+            float: right; }
+        html body #Etape_inscription form .complement span:nth-child(1) {
+          background-image: url("../documentInfuze/contact.png");
+          background-repeat: no-repeat; }
+        html body #Etape_inscription form .complement span:nth-child(2) {
+          background-image: url("../documentInfuze/password.png");
+          background-repeat: no-repeat; }
+        html body #Etape_inscription form .complement span:nth-child(3) {
+          background-image: url("../documentInfuze/birthday.png");
+          background-repeat: no-repeat; }
+        html body #Etape_inscription form .complement span:nth-child(4) {
+          background-image: url("../documentInfuze/loupe.png");
+          background-repeat: no-repeat; }
+        html body #Etape_inscription form .complement span:nth-child(5) {
+          background-image: url("../documentInfuze/telephone.png");
+          background-repeat: no-repeat; }
   html body #banniere {
     height: 280px;
     width: 400px;
