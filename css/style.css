@@ -233,12 +233,6 @@ html body {
           float: left;
           left: 57px;
           position: relative; }
-          html body .class #formulaire_inscription .genre input:nth-child(1) {
-            background-image: url("../documentInfuze/femme.png");
-            background-repeat: no-repeat; }
-          html body .class #formulaire_inscription .genre input:nth-child(2) {
-            background-image: url("../documentInfuze/homme.png");
-            background-repeat: no-repeat; }
       html body .class #formulaire_inscription .information {
         height: 97px;
         background-image: url("../documentInfuze/formulaire.png");
