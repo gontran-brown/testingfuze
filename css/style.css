@@ -60,12 +60,26 @@ html body {
         left: 300px;
         background-image: url("../documentInfuze/bouton_valider.png");
         background-repeat: no-repeat; }
+      html body #header #pass .map {
+        width: 150px;
+        height: 50px;
+        left: 247px;
+        top: 13px;
+        background-image: url("../documentInfuze/bouton_list_map.png");
+        background-repeat: no-repeat; }
       html body #header #pass .modifier {
         width: 93px;
         height: 48px;
         left: 290px;
         background-image: url("../documentInfuze/bouton_modifier.png");
         background-repeat: no-repeat; }
+      html body #header #pass .ajouter {
+        width: 120px;
+        height: 48px;
+        left: 272px;
+        background-image: url("../documentInfuze/bouton_ajout_carte.png");
+        background-repeat: no-repeat;
+        background-position: 0px 5px; }
   html body .class {
     margin: 0 10px;
     position: relative;
@@ -126,6 +140,38 @@ html body {
       background-position: 110px 7px; }
       html body .class .slogan3 span {
         float: right; }
+    html body .class .temps {
+      background-image: url("../documentInfuze/fond_recherche.png");
+      background-repeat: no-repeat;
+      height: 55px; }
+      html body .class .temps div {
+        width: 130px;
+        height: 40px;
+        top: 5px;
+        float: left;
+        line-height: 3em;
+        margin-bottom: 2px;
+        margin-left: 1px;
+        margin-right: 1px; }
+        html body .class .temps div span {
+          font-size: 15px; }
+        html body .class .temps div:nth-child(1) {
+          border-radius: 20px 0px 0px 20px;
+          background-color: #73849c;
+          color: #bac4cb; }
+          html body .class .temps div:nth-child(1) span {
+            margin-left: 14px;
+            float: left; }
+        html body .class .temps div:nth-child(2) {
+          background-color: #bac4cb;
+          color: #73849c; }
+        html body .class .temps div:nth-child(3) {
+          border-raduis: 0px 20px 20px 0px;
+          background-color: #bac4cb;
+          color: #73849c; }
+          html body .class .temps div:nth-child(3) span {
+            float: left;
+            margin-left: 14px; }
     html body .class .bon_plan {
       width: 350px;
       height: 50px;
@@ -134,6 +180,55 @@ html body {
       height: 100px;
       background-image: url("../documentInfuze/accroche.png");
       background-repeat: no-repeat; }
+    html body .class #formulaire {
+      width: 400px; }
+      html body .class #formulaire .slogan {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 2em;
+        text-align: center; }
+      html body .class #formulaire input {
+        width: 390px;
+        border: none;
+        border-radius: 8px;
+        height: 43px;
+        margin-top: 1px;
+        margin-bottom: 1px; }
+    html body .class #scanner ul {
+      list-style: none;
+      float: left;
+      background-image: url("../documentInfuze/fond_parainage.png");
+      background-repeat: no-repeat; }
+      html body .class #scanner ul span {
+        font-weight: bold;
+        float: left;
+        text-indent: 180px; }
+      html body .class #scanner ul div {
+        width: 400px;
+        height: 55px;
+        float: left;
+        left: 10px;
+        margin-top: 5px;
+        background-image: url("../documentInfuze/valider_inscription.png");
+        background-repeat: no-repeat; }
+      html body .class #scanner ul input {
+        width: 370px;
+        float: left;
+        border: none;
+        border-radius: 8px;
+        height: 43px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 15px; }
+      html body .class #scanner ul li {
+        height: 70px; }
+        html body .class #scanner ul li div {
+          float: left;
+          position: relative;
+          height: 50px;
+          background-image: url("../documentInfuze/bouton_scanner_carte.png");
+          background-repeat: no-repeat; }
     html body .class #formulaire_reconnexion {
       float: left; }
       html body .class #formulaire_reconnexion span {
@@ -249,18 +344,19 @@ html body {
             height: 70px;
             background-image: url("../documentInfuze/fleche_no_active.png");
             background-repeat: no-repeat;
-            background-position: 230px 22px; }
+            background-position: 275px 22px; }
             html body .class #message ul li div div h3 {
               background-color: #3366cc;
               color: white;
-              display: inline; }
+              display: inline-block; }
             html body .class #message ul li div div .soustitre {
               font-weight: bold;
-              clear: both;
-              width: 300px;
-              line-height: 4em; }
+              width: 300px; }
+            html body .class #message ul li div div span {
+              float: left; }
     html body .class #carte {
-      width: 370px;
+      width: 375px;
+      margin-top: -12px;
       float: left; }
       html body .class #carte ul {
         list-style: none; }
@@ -274,13 +370,48 @@ html body {
             height: 70px;
             border-bottom: solid white; }
             html body .class #carte ul li div div {
-              float: left;
-              left: 95px;
-              width: 290px;
+              margin-left: 95px;
+              width: 273px;
               height: 70px;
               background-image: url("../documentInfuze/fleche_no_active.png");
               background-repeat: no-repeat;
-              background-position: 230px 22px; }
+              background-position: 245px 22px; }
+              html body .class #carte ul li div div .soustitre {
+                color: black;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 3em; }
+    html body .class #profil {
+      width: 400px;
+      float: left; }
+      html body .class #profil ul {
+        list-style: none; }
+        html body .class #profil ul li {
+          background-image: url("../documentInfuze/fond_coordonee.png");
+          background-repeat: no-repeat;
+          height: 70px;
+          margin-bottom: 1px;
+          margin-top: 1px; }
+          html body .class #profil ul li div {
+            text-indent: 15px;
+            width: 400px;
+            height: 70px;
+            background-image: url("../documentInfuze/fleche_no_active.png");
+            background-repeat: no-repeat;
+            background-position: 376px 26px; }
+            html body .class #profil ul li div a {
+              text-decoration: none;
+              position: absolute;
+              display: block;
+              height: 64px;
+              width: 400px;
+              margin: 0;
+              padding: 0; }
+              html body .class #profil ul li div a .soustitre {
+                color: black;
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 4em; }
     html body .class #recherche {
       width: 400px;
       height: 53px;
@@ -290,10 +421,15 @@ html body {
       html body .class #recherche input {
         display: inline; }
         html body .class #recherche input:nth-child(1) {
+          text-indent: 45px;
+          font-size: 14px;
+          background-image: url("../documentInfuze/icon_recherche.png");
+          background-repeat: no-repeat;
+          background-position: 10px 8px;
           border: none;
           border-radius: 20px;
           box-shadow: 1px 3px 4px #707070 inset;
-          width: 370px;
+          width: 375px;
           height: 38px;
           margin-left: 10px;
           margin-top: 7px; }
@@ -357,49 +493,122 @@ html body {
           background-repeat: no-repeat; }
         html body .class #content .choix:nth-child(3) ul li {
           background-image: url("../documentInfuze/courier.png");
-          repeat: no-repeat; }
-  html body #Etape_choix div {
+          background-repeat: no-repeat; }
+  html body #Etape_choix div,
+  html body #Etape_recherche div,
+  html body #Etape_choix_notif div {
     width: 400px;
     margin-bottom: 3px; }
-    html body #Etape_choix div ul {
+    html body #Etape_choix div ul,
+    html body #Etape_recherche div ul,
+    html body #Etape_choix_notif div ul {
       list-style: none;
       background-image: url("../documentInfuze/fond_coordonee.png");
       background-repeat: no-repeat; }
-      html body #Etape_choix div ul li {
+      html body #Etape_choix div ul li,
+      html body #Etape_recherche div ul li,
+      html body #Etape_choix_notif div ul li {
         background-position: 8px 3px; }
-        html body #Etape_choix div ul li div {
-          height: 50px;
-          background-image: url("../documentInfuze/bouton_on.png");
-          background-repeat: no-repeat;
-          background-position: 293px 7px; }
-          html body #Etape_choix div ul li div span {
+        html body #Etape_choix div ul li div,
+        html body #Etape_recherche div ul li div,
+        html body #Etape_choix_notif div ul li div {
+          height: 50px; }
+          html body #Etape_choix div ul li div span,
+          html body #Etape_recherche div ul li div span,
+          html body #Etape_choix_notif div ul li div span {
             text-align: center;
             display: inline-block;
             font-size: 20px;
             font-weight: bold;
             line-height: 2.6em;
             margin-left: 65px; }
-    html body #Etape_choix div:nth-child(1) ul li {
-      background-image: url("../documentInfuze/vigniette_resto.png");
-      background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(2) ul li {
-      background-image: url("../documentInfuze/vigniette_achat.png");
-      background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(3) ul li {
-      background-image: url("../documentInfuze/vigniette_sante.png");
-      background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(4) ul li {
-      background-image: url("../documentInfuze/valider_services.png");
-      background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(5) ul li {
-      background-image: url("../documentInfuze/vigniette_auto.png");
-      background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(6) ul li {
-      background-image: url("../documentInfuze/vigniette_hotel.png");
-      background-repeat: no-repeat; }
-    html body #Etape_choix div:nth-child(7) ul li {
-      background-image: url("../documentInfuze/vigniette_maison.png");
-      background-repeat: no-repeat; }
+  html body #Etape_choix div div:nth-child(1) ul li,
+  html body #Etape_choix .choix div:nth-child(1) ul li,
+  html body #Etape_recherche div div:nth-child(1) ul li,
+  html body #Etape_recherche .choix div:nth-child(1) ul li,
+  html body #Etape_choix_notif div div:nth-child(1) ul li,
+  html body #Etape_choix_notif .choix div:nth-child(1) ul li {
+    background-image: url("../documentInfuze/vigniette_resto.png");
+    background-repeat: no-repeat; }
+  html body #Etape_choix div div:nth-child(2) ul li,
+  html body #Etape_choix .choix div:nth-child(2) ul li,
+  html body #Etape_recherche div div:nth-child(2) ul li,
+  html body #Etape_recherche .choix div:nth-child(2) ul li,
+  html body #Etape_choix_notif div div:nth-child(2) ul li,
+  html body #Etape_choix_notif .choix div:nth-child(2) ul li {
+    background-image: url("../documentInfuze/vigniette_achat.png");
+    background-repeat: no-repeat; }
+  html body #Etape_choix div div:nth-child(3) ul li,
+  html body #Etape_choix .choix div:nth-child(3) ul li,
+  html body #Etape_recherche div div:nth-child(3) ul li,
+  html body #Etape_recherche .choix div:nth-child(3) ul li,
+  html body #Etape_choix_notif div div:nth-child(3) ul li,
+  html body #Etape_choix_notif .choix div:nth-child(3) ul li {
+    background-image: url("../documentInfuze/vigniette_sante.png");
+    background-repeat: no-repeat; }
+  html body #Etape_choix div div:nth-child(4) ul li,
+  html body #Etape_choix .choix div:nth-child(4) ul li,
+  html body #Etape_recherche div div:nth-child(4) ul li,
+  html body #Etape_recherche .choix div:nth-child(4) ul li,
+  html body #Etape_choix_notif div div:nth-child(4) ul li,
+  html body #Etape_choix_notif .choix div:nth-child(4) ul li {
+    background-image: url("../documentInfuze/valider_services.png");
+    background-repeat: no-repeat; }
+  html body #Etape_choix div div:nth-child(5) ul li,
+  html body #Etape_choix .choix div:nth-child(5) ul li,
+  html body #Etape_recherche div div:nth-child(5) ul li,
+  html body #Etape_recherche .choix div:nth-child(5) ul li,
+  html body #Etape_choix_notif div div:nth-child(5) ul li,
+  html body #Etape_choix_notif .choix div:nth-child(5) ul li {
+    background-image: url("../documentInfuze/vigniette_auto.png");
+    background-repeat: no-repeat; }
+  html body #Etape_choix div div:nth-child(6) ul li,
+  html body #Etape_choix .choix div:nth-child(6) ul li,
+  html body #Etape_recherche div div:nth-child(6) ul li,
+  html body #Etape_recherche .choix div:nth-child(6) ul li,
+  html body #Etape_choix_notif div div:nth-child(6) ul li,
+  html body #Etape_choix_notif .choix div:nth-child(6) ul li {
+    background-image: url("../documentInfuze/vigniette_hotel.png");
+    background-repeat: no-repeat; }
+  html body #Etape_choix div div:nth-child(7) ul li,
+  html body #Etape_choix .choix div:nth-child(7) ul li,
+  html body #Etape_recherche div div:nth-child(7) ul li,
+  html body #Etape_recherche .choix div:nth-child(7) ul li,
+  html body #Etape_choix_notif div div:nth-child(7) ul li,
+  html body #Etape_choix_notif .choix div:nth-child(7) ul li {
+    background-image: url("../documentInfuze/vigniette_maison.png");
+    background-repeat: no-repeat; }
+  html body #Etape_choix div ul li div,
+  html body #Etape_choix_notif div ul li div {
+    background-image: url("../documentInfuze/bouton_on.png");
+    background-repeat: no-repeat;
+    background-position: 293px 7px; }
+  html body #Etape_choix .enseigne,
+  html body #Etape_choix_notif .enseigne {
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline-block;
+    text-indent: 30px; }
+  html body #Etape_choix .notif ul li div,
+  html body #Etape_choix_notif .notif ul li div {
+    background-image: url("../documentInfuze/bouton_off.png");
+    background-repeat: no-repeat; }
+    html body #Etape_choix .notif ul li div span,
+    html body #Etape_choix_notif .notif ul li div span {
+      font-size: 14px;
+      line-height: 3.4em;
+      text-indent: -34px; }
+  html body #Etape_recherche div ul li div {
+    background-image: url("../documentInfuze/fleche.png");
+    background-repeat: no-repeat;
+    background-position: 375px 18px; }
+    html body #Etape_recherche div ul li div a {
+      text-decoration: none;
+      color: black; }
+      html body #Etape_recherche div ul li div a p {
+        margin-left: 345px;
+        margin-top: 18px; }
   html body #carnet {
     float: left;
     clear: both;
@@ -502,29 +711,28 @@ html body {
           display: inline-block; }
       html body #footer ul .carte a {
         left: 86px; }
-        html body #footer ul .carte a:visited {
+        html body #footer ul .carte a:active {
           background-image: url("../documentInfuze/icon_carte.png");
           background-repeat: no-repeat;
           background-position: 5px 2px; }
       html body #footer ul .compte a {
         left: 167px; }
-        html body #footer ul .compte a:visited {
+        html body #footer ul .compte a:active {
           background-image: url("../documentInfuze/icon_contact.png");
           background-repeat: no-repeat;
           background-position: 5px 2px; }
       html body #footer ul .lieu a {
         left: 247px; }
-        html body #footer ul .lieu a:visited {
+        html body #footer ul .lieu a:active {
           background-image: url("../documentInfuze/.png");
           background-repeat: no-repeat;
           background-position: 5px 2px; }
       html body #footer ul .scan a {
         left: 329px; }
-        html body #footer ul .scan a:visited {
+        html body #footer ul .scan a:active {
           background-image: url("../documentInfuze/icon_scan.png");
-          background-repeat: no-repeat;
-          background-position: 5px 2px; }
-      html body #footer ul .message a:visited {
+          background-repeat: no-repeat; }
+      html body #footer ul .message a:active {
         background-image: url("../documentInfuze/icon_message.png");
         background-repeat: no-repeat;
         background-position: 5px 2px; }
