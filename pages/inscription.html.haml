@@ -29,8 +29,10 @@
             %input{type: "image", src: "../documentInfuze/homme.png", onselect: ""}
             %input{type: "hidden", value:"", name: "sexe"}
           %div.information
-            %input{type: "text"}
-            %input{type: "text"}
+            %span
+              %input{type: "text", value: "nom"}
+            %span
+              %input{type: "text", value: "prenom"}
           %div.complement
             %div
               %input{type: "email", value: "Identifiant (email)"}
