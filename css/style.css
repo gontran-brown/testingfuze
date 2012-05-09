@@ -462,7 +462,13 @@ html body {
         html body .class #content .choix:nth-child(3) ul li {
           background-image: url("../documentInfuze/courier.png");
           background-repeat: no-repeat; }
-  html body #Etape_choix div {
+  html body #Etape_choix div ul li div {
+    height: 50px;
+    background-image: url("../documentInfuze/bouton_on.png");
+    background-repeat: no-repeat;
+    background-position: 293px 7px; }
+  html body #Etape_choix div,
+  html body #Etape_recherche div {
     width: 400px;
     margin-bottom: 3px; }
     html body #Etape_choix div ul,
