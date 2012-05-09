@@ -66,6 +66,15 @@ html
             image: url('../documentInfuze/bouton_retour.png')
             repeat: no-repeat
 
+        .map
+          width: 150px
+          height: 48px
+          left: 252px
+          top: 10px
+          background:
+            image: url('../documentInfuze/bouton_list_map.png')
+            repeat: no-repeat
+
         .valider
           width: 93px
           height: 48px
@@ -681,7 +690,6 @@ html
     #Etape_choix,
     #Etape_recherche,
     #Etape_choix_notif
-
       div
 
         width: 400px
@@ -873,6 +881,91 @@ html
             font-weight: bold
             font-size: 0.90em
             float: left
+
+    #Etape_inscription
+      width: 400px
+      form
+        width: 380px
+        float: left
+
+        .genre
+          span
+            clear: both
+          &:nth-child(1)
+            background:
+              image: url("../documentInfuze/femme.png")
+              repeat: no-repeat
+          &:nth-child(n)
+            background:
+              image: url("../documentInfuze/homme.png")
+              repeat: no-repeat
+
+        .information
+          height: 40px
+          width: 380px
+          float: left
+          clear: both
+          border-radius: 15px 15px 0 0
+            background:
+              image: url("../documentInfuze/formulaire.png")
+              repeat: no-repeat
+
+          &:first-child
+            width: 370px
+
+        .complement
+          width: 380px
+          span
+            float: left
+            width: 380px
+            clear: both
+            height: 41px
+            background-color: #fff
+            input
+              float: left
+              left: 175px
+              position: absolute
+              vertical-align: middle
+
+          span:nth-child(1)
+            border-radius: 10px 10px 0 0
+            background:
+              image: url("../documentInfuze/contact.png")
+              repeat: no-repeat
+          span:nth-child(2)
+            background:
+              image: url("../documentInfuze/password.png")
+              repeat: no-repeat
+
+          span:nth-child(3)
+            background:
+              image: url("../documentInfuze/birthday.png")
+              repeat: no-repeat
+
+          span:nth-child(4)
+            background:
+              image: url("../documentInfuze/loupe.png")
+              repeat: no-repeat
+
+          span:nth-child(5)
+            border-radius: 0 0 10px 10px
+            background:
+              image: url("../documentInfuze/telephone.png")
+              repeat: no-repeat
+
+        .validation
+          margin: 1px 10px
+          width: 380px
+          height: 20px
+
+          span
+            color: #fff
+            input
+              margin-top: 15px
+            a
+              margin-top: 5px
+              color: #fff
+              font-weight: bold
 
     #banniere
       height: 280px
