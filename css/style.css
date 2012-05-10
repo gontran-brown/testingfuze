@@ -277,10 +277,10 @@ html body {
       html body .class #formulaire_inscription .information {
         height: 97px;
         width: 354px;
-        clear: both;
         background-image: url("../documentInfuze/formulaire.png");
         background-repeat: no-repeat;
         margin-bottom: 16px;
+        margin-left: 19px;
         border-radius: 10px; }
         html body .class #formulaire_inscription .information input {
           width: 253px;
@@ -322,16 +322,18 @@ html body {
             background-image: url("../documentInfuze/telephone.png");
             background-repeat: no-repeat;
             background-size: 62px 40px; }
-      html body .class #formulaire_inscription .validation div {
-        margin-top: 5px;
-        margin-left: 17px; }
-      html body .class #formulaire_inscription .validation span {
-        margin-left: 17px;
-        color: white; }
-        html body .class #formulaire_inscription .validation span a {
-          text-decoration: none;
-          font-weight: bold;
+      html body .class #formulaire_inscription .validation {
+        width: 400px; }
+        html body .class #formulaire_inscription .validation div {
+          margin-top: 5px;
+          margin-left: 17px; }
+        html body .class #formulaire_inscription .validation span {
+          margin-left: 17px;
           color: white; }
+          html body .class #formulaire_inscription .validation span a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white; }
     html body .class #message ul {
       list-style: none; }
       html body .class #message ul li {
