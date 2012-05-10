@@ -141,6 +141,55 @@ html body {
       height: 100px;
       background-image: url("../documentInfuze/accroche.png");
       background-repeat: no-repeat; }
+    html body .class #formulaire {
+      width: 400px; }
+      html body .class #formulaire .slogan {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 2em;
+        text-align: center; }
+      html body .class #formulaire input {
+        width: 390px;
+        border: none;
+        border-radius: 8px;
+        height: 43px;
+        margin-top: 1px;
+        margin-bottom: 1px; }
+    html body .class #scanner ul {
+      list-style: none;
+      float: left;
+      background-image: url("../documentInfuze/fond_parainage.png");
+      background-repeat: no-repeat; }
+      html body .class #scanner ul span {
+        font-weight: bold;
+        float: left;
+        text-indent: 180px; }
+      html body .class #scanner ul div {
+        width: 385px;
+        height: 55px;
+        float: left;
+        left: 10px;
+        margin-top: 5px;
+        background-image: url("../documentInfuze/valider_inscription.png");
+        background-repeat: no-repeat; }
+      html body .class #scanner ul input {
+        width: 370px;
+        float: left;
+        border: none;
+        border-radius: 8px;
+        height: 43px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-left: 15px; }
+      html body .class #scanner ul li {
+        height: 70px; }
+        html body .class #scanner ul li div {
+          float: left;
+          position: relative;
+          height: 50px;
+          background-image: url("../documentInfuze/bouton_scanner_carte.png");
+          background-repeat: no-repeat; }
     html body .class #formulaire_reconnexion {
       float: left; }
       html body .class #formulaire_reconnexion span {
