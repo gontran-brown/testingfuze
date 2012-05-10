@@ -213,12 +213,13 @@ html body {
         text-indent: 180px; }
       html body .class #scanner ul div {
         width: 400px;
-        height: 55px;
+        height: 75px;
         float: left;
         left: 10px;
         margin-top: 5px;
         background-image: url("../documentInfuze/valider_inscription.png");
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-position: 19px 15px; }
       html body .class #scanner ul input {
         width: 370px;
         float: left;
@@ -233,9 +234,10 @@ html body {
         html body .class #scanner ul li div {
           float: left;
           position: relative;
-          height: 50px;
+          height: 55px;
           background-image: url("../documentInfuze/bouton_scanner_carte.png");
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          background-position: 19px 5px; }
     html body .class #formulaire_reconnexion {
       float: left; }
       html body .class #formulaire_reconnexion span {
