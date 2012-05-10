@@ -46,7 +46,7 @@ html body {
           content: "VIP";
           font-weight: bold; }
       html body #header #pass .titre {
-        left: 70px;
+        left: 90px;
         color: white;
         font-size: 1.3em; }
       html body #header #pass .retour {
@@ -127,6 +127,11 @@ html body {
       text-align: center;
       background-image: url("../documentInfuze/bar_blanche.png");
       background-repeat: no-repeat; }
+    html body .class .lier {
+      position: relative;
+      float: left;
+      margin: 10px;
+      left: 14px; }
     html body .class .slogan,
     html body .class .slogan2,
     html body .class .slogan3 {
@@ -153,29 +158,36 @@ html body {
       height: 55px; }
       html body .class .temps div {
         width: 130px;
-        height: 40px;
-        top: 5px;
+        height: 50px;
         float: left;
         line-height: 3em;
         margin-bottom: 2px;
-        margin-left: 1px;
-        margin-right: 1px; }
+        margin-left: 0.5px;
+        margin-right: 0.5px;
+        margin-top: 2px; }
         html body .class .temps div span {
           font-size: 15px; }
         html body .class .temps div:nth-child(1) {
-          border-radius: 20px 0px 0px 20px;
-          background-color: #73849c;
+          background-image: url("../documentInfuze/bouton_temps_presse.png");
+          background-repeat: no-repeat;
           color: #bac4cb; }
           html body .class .temps div:nth-child(1) span {
             margin-left: 14px;
             float: left; }
         html body .class .temps div:nth-child(2) {
-          background-color: #bac4cb;
+          width: 135px;
+          background-image: url("../documentInfuze/bouton_temps_releve.png");
+          background-repeat: no-repeat;
+          background-size: 135px 50px;
           color: #73849c; }
+          html body .class .temps div:nth-child(2) span {
+            margin-left: 6px; }
         html body .class .temps div:nth-child(3) {
-          border-raduis: 0px 20px 20px 0px;
-          background-color: #bac4cb;
-          color: #73849c; }
+          border-radius: 0px 11px 11px 0px;
+          margin-right: 0px;
+          color: #73849c;
+          background-image: url("../documentInfuze/bouton_temps_releve.png");
+          background-repeat: no-repeat; }
           html body .class .temps div:nth-child(3) span {
             float: left;
             margin-left: 14px; }
@@ -691,6 +703,42 @@ html body {
         html body #connexion ul li:last-child div {
           background-image: url("../documentInfuze/bouton_connecter.png");
           background-repeat: no-repeat; }
+  html body #Etape_lier_compte {
+    width: 400px;
+    height: 320px;
+    float: left;
+    position: relative;
+    margin-bottom: 25px; }
+    html body #Etape_lier_compte div {
+      background-image: url("../documentInfuze/fond_partage.png");
+      background-repeat: no-repeat;
+      width: 400px;
+      height: 300px; }
+      html body #Etape_lier_compte div div.facebook {
+        float: left;
+        background-image: url("../documentInfuze/icon_facebook.png");
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        margin-right: 17px;
+        margin-top: 17px;
+        margin-left: 20px;
+        margin-bottom: 3px; }
+      html body #Etape_lier_compte div div.bouton {
+        background-image: url("../documentInfuze/bouton_validation.png");
+        background-repeat: no-repeat;
+        background-size: 325px 50px;
+        background-position: 28px 0px;
+        margin-top: 15px; }
+        html body #Etape_lier_compte div div.bouton span {
+          color: white;
+          font-weight: bold;
+          margin-left: 67px;
+          line-height: 2.6em; }
+      html body #Etape_lier_compte div p {
+        font-size: 20px;
+        color: #5e5e5e;
+        padding: 15px; }
   html body #footer {
     width: 400px;
     clear: both;
