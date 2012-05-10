@@ -4,7 +4,10 @@
 
 html
   body
-    background-image: url('../documentInfuze/background.jpg')
+    background:
+      image: url('../documentInfuze/background.jpg')
+      repeat: no-repeat
+      size: 420px 600px
 
     #header
       margin: 2px 10px
@@ -173,7 +176,7 @@ html
         color: #fff
         font-size: 20px
         font-weight: bold
-        line-height: 2em
+        line-height: 3em
 
       .slogan
         text-align: center
@@ -279,6 +282,7 @@ html
       #scanner
 
         ul
+          width: 400px
           list-style: none
           float: left
           background:
@@ -294,12 +298,24 @@ html
             width: 400px
             height: 75px
             float: left
-            left: 10px
-            margin-top: 5px
+            margin:
+              top: 5px
+              left: 3px
+
             background:
-              image: url("../documentInfuze/valider_inscription.png")
+              image: url("../documentInfuze/bouton_validation.png")
               repeat: no-repeat
               position: 19px 15px
+
+            a
+              span
+                font-weight: bold
+                font-size: 18px
+                color: #fff
+                text-indent: inherit
+                margin:
+                  top: 30px
+                  left: 157px
 
           input
             width: 370px
@@ -377,13 +393,13 @@ html
 
         .information
           height: 97px
-          width: 354px
+          width: 400px
           background:
             image: url("../documentInfuze/formulaire.png")
             repeat: no-repeat
+            size: 400px 98px
           margin:
             bottom: 16px
-            left: 19px
           border-radius: 10px
 
           input
@@ -404,7 +420,6 @@ html
           div
             width: 380px
             display: block
-            height: 41px
 
             input
               border: none
@@ -446,9 +461,21 @@ html
           width: 400px
 
           div
+            background:
+              image: url('../documentInfuze/bouton_validation.png')
+              repeat: no-repeat
             margin:
               top: 5px
               left: 17px
+            width: 400px
+            height: 50px
+
+            a
+              span
+                line-height: 2.6em
+                font-size: 20px
+                font-weight: bold
+                margin-left: 130px
 
           span
             margin-left: 17px
@@ -954,6 +981,22 @@ html
             background:
               image: url("../documentInfuze/bouton_connecter.png")
               repeat: no-repeat
+
+    #condition_general
+
+      div
+        background:
+          image: url('../documentInfuze/fond_partage.png')
+          repeat: no-repeat
+          size: 400px 300px
+
+        width: 400px
+        height: 300px
+
+        p
+          font-size: 18px
+          color: #5e5e5e
+          padding: 15px
 
     #Etape_lier_compte
       width: 400px
