@@ -1,3 +1,5 @@
+@import usefull
+
 *
   margin: 0
   padding: 0
@@ -11,13 +13,13 @@ html
 
     #header
       margin: 2px 10px
-      width: 400px
+      width: $width_ecran
       clear: both
 
       ul
         list-style: none
         float: left
-        width: 400px
+        width: $width_ecran
       #pass
         height: 60px
         background:
@@ -58,7 +60,7 @@ html
             font-weight: bold
 
         .titre
-          left: 90px
+          left: 75px
           color: #fff
           font-size: 1.3em
 
@@ -110,16 +112,29 @@ html
           background:
             image: url('../documentInfuze/bouton_ajout_carte.png')
             repeat: no-repeat
-            position: 0px 5px
+            position: 0px 6px
 
     .class
       margin: 0 10px
       position: relative
       clear: both
-      width: 400px
+      width: $width_ecran
+
+      #logo
+        background:
+          image: url('../documentInfuze/fond_coordonee.png')
+          repeat: no-repeat
+          size: 390px 47px
+          position: 0 5px
+        margin:
+          bottom: 7px
+          left: 5px
+        width: 390px
+        height: 50px
+        border-radius: 10px 10px 0 0
 
       #popup
-        width: 400px
+        width: $width_ecran
         list-style: none
 
         li:nth-child(1)
@@ -129,7 +144,7 @@ html
           line-height: 49px
 
         li
-          width: 400px
+          width: $width_ecran
           color: #fff
           font-size: 1.1em
 
@@ -261,7 +276,7 @@ html
           repeat: no-repeat
 
       #formulaire
-        width: 400px
+        width: $width_ecran
 
         .slogan
           color: #fff
@@ -278,11 +293,14 @@ html
           margin:
             top: 1px
             bottom: 1px
+            left: 5px
 
       #scanner
 
         ul
-          width: 400px
+          padding:
+            top: 5px
+          width: $width_ecran
           list-style: none
           float: left
           background:
@@ -295,33 +313,41 @@ html
             text-indent: 180px
 
           div
-            width: 400px
-            height: 75px
+            width: 370px
+            height: 65px
             float: left
             margin:
               top: 5px
               left: 3px
 
-            background:
-              image: url("../documentInfuze/bouton_validation.png")
-              repeat: no-repeat
-              position: 19px 15px
+            &:nth-child(1)
+              background:
+                image: url("../documentInfuze/bouton_scanner_carte.png")
+                repeat: no-repeat
 
-            a
-              span
-                font-weight: bold
-                font-size: 18px
-                color: #fff
-                text-indent: inherit
-                margin:
-                  top: 30px
-                  left: 157px
+            &:nth-child(2)
+              background:
+                image: url("../documentInfuze/bouton_validation.png")
+                repeat: no-repeat
+                position: 19px 15px
+
+              a
+                span
+                  font-weight: bold
+                  font-size: 18px
+                  color: #fff
+                  text-indent: inherit
+                  margin:
+                    top: 30px
+                    left: 157px
 
           input
             width: 370px
             float: left
             border: none
             border-radius: 8px
+            box-shadow: 1px 2px 6px inset
+            text-indent: 8px
             height: 43px
             margin:
               top: 10px
@@ -364,6 +390,7 @@ html
                 top: 5px
               width: 290px
               height: 35px
+
         span
 
           a
@@ -379,6 +406,7 @@ html
 
       #formulaire_inscription
         width: 395px
+
         .genre
           height: 50px
           margin:
@@ -393,7 +421,7 @@ html
 
         .information
           height: 97px
-          width: 400px
+          width: $width_ecran
           background:
             image: url("../documentInfuze/formulaire.png")
             repeat: no-repeat
@@ -458,7 +486,7 @@ html
                 size: 62px 40px
 
         .validation
-          width: 400px
+          width: $width_ecran
 
           div
             background:
@@ -467,7 +495,7 @@ html
             margin:
               top: 5px
               left: 17px
-            width: 400px
+            width: $width_ecran
             height: 50px
 
             a
@@ -565,7 +593,7 @@ html
                   line-height: 3em
 
       #profil
-        width: 400px
+        width: $width_ecran
         float: left
 
         ul
@@ -582,7 +610,7 @@ html
 
             div
               text-indent: 15px
-              width: 400px
+              width: $width_ecran
               height: 70px
               background:
                 image: url('../documentInfuze/fleche_no_active.png')
@@ -594,7 +622,7 @@ html
                 position: absolute
                 display: block
                 height: 64px
-                width: 400px
+                width: $width_ecran
                 margin: 0
                 padding: 0
 
@@ -605,7 +633,7 @@ html
                   line-height: 4em
 
       #recherche
-        width: 400px
+        width: $width_ecran
         height: 53px
         margin:
           bottom: 10px
@@ -647,7 +675,7 @@ html
           repeat: no-repeat
 
       #content
-        width: 400px
+        width: $width_ecran
 
         .icon
           height: 100px
@@ -663,7 +691,7 @@ html
             float: left
             text-decoration: none
             text-indent: -5000px
-            width: 400px
+            width: $width_ecran
             height: 90px
             background:
               image: url("../documentInfuze/parainage.png")
@@ -672,7 +700,7 @@ html
 
         .choix
           background: inherit
-          width: 400px
+          width: $width_ecran
           margin:
             bottom: 3px
 
@@ -731,9 +759,9 @@ html
     #Etape_choix,
     #Etape_recherche,
     #Etape_choix_notif
-      div
 
-        width: 400px
+      div
+        width: $width_ecran
         margin:
           bottom: 3px
 
@@ -762,7 +790,9 @@ html
     #Etape_choix_notif
 
       div,
+
       .choix
+
         div
 
           &:nth-child(1)
@@ -830,9 +860,13 @@ html
 
     #Etape_choix,
     #Etape_choix_notif
+
       div
+
         ul
+
           li
+
             div
               background:
                 image: url("../documentInfuze/bouton_on.png")
@@ -848,9 +882,13 @@ html
         text-indent: 30px
 
       .notif
+
         ul
+
           li
+
             div
+
               span
                 font-size: 14px
                 line-height: 3.4em
@@ -861,14 +899,19 @@ html
                 repeat: no-repeat
 
     #Etape_recherche
+
       div
+
         ul
+
           li
+
             div
               background:
                 image: url("../documentInfuze/fleche.png")
                 repeat: no-repeat
                 position: 375px 18px
+
               a
                 text-decoration: none
                 color: #000
@@ -886,6 +929,7 @@ html
       background: #FFF
 
       ul
+
         li:last-child
           margin-bottom: 3px
 
@@ -896,7 +940,7 @@ html
           list-style: none
           text-align: center
           float: left
-          width: 400px
+          width: $width_ecran
           clear: both
 
           div
@@ -923,10 +967,9 @@ html
             font-size: 0.90em
             float: left
 
-
     #banniere
       height: 280px
-      width: 400px
+      width: $width_ecran
       margin-left: 10px
       clear: both
       background:
@@ -934,7 +977,7 @@ html
         repeat: no-repeat
 
     #connexion
-      width: 400px
+      width: $width_ecran
       clear: both
       background:
         image: url("../documentInfuze/fond_connexion.png")
@@ -945,7 +988,7 @@ html
 
         li
           clear: both
-          width: 400px
+          width: $width_ecran
           height: 65px
           padding-top: 32px
           margin-left: 22px
@@ -990,7 +1033,7 @@ html
           repeat: no-repeat
           size: 400px 300px
 
-        width: 400px
+        width: $width_ecran
         height: 300px
 
         p
@@ -999,7 +1042,8 @@ html
           padding: 15px
 
     #Etape_lier_compte
-      width: 400px
+
+      width: $width_ecran
       height: 320px
       float: left
       position: relative
@@ -1010,10 +1054,11 @@ html
         background:
           image: url('../documentInfuze/fond_partage.png')
           repeat: no-repeat
-        width: 400px
+        width: $width_ecran
         height: 300px
 
         div
+
           &.facebook
             float: left
             background:
@@ -1049,7 +1094,7 @@ html
 
 
     #footer
-      width: 400px
+      width: $width_ecran
       clear: both
       float: left
       height: 70px
