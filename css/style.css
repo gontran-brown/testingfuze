@@ -669,15 +669,18 @@ html body {
     margin-bottom: 4px;
     display: inline-block;
     text-indent: 30px; }
-  html body #Etape_choix .notif ul li div,
-  html body #Etape_choix_notif .notif ul li div {
-    background-image: url("../documentInfuze/bouton_off.png");
-    background-repeat: no-repeat; }
-    html body #Etape_choix .notif ul li div span,
-    html body #Etape_choix_notif .notif ul li div span {
-      font-size: 14px;
-      line-height: 3.4em;
-      text-indent: -34px; }
+  html body #Etape_choix .notif,
+  html body #Etape_choix_notif .notif {
+    margin-top: 30px; }
+    html body #Etape_choix .notif ul li div,
+    html body #Etape_choix_notif .notif ul li div {
+      background-image: url("../documentInfuze/bouton_off.png");
+      background-repeat: no-repeat; }
+      html body #Etape_choix .notif ul li div span,
+      html body #Etape_choix_notif .notif ul li div span {
+        font-size: 14px;
+        line-height: 3.4em;
+        text-indent: -34px; }
   html body #Etape_recherche div ul li div {
     background-image: url("../documentInfuze/fleche.png");
     background-repeat: no-repeat;
@@ -808,6 +811,67 @@ html body {
         font-size: 20px;
         color: #5e5e5e;
         padding: 15px; }
+  html body #home .home {
+    float: left;
+    background-image: url("../documentInfuze/dashboard_fleche.png");
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+    background-size: 50px 30px;
+    height: 76px;
+    color: white;
+    left: 50px;
+    position: relative;
+    top: 10px; }
+  html body #home div {
+    float: left; }
+    html body #home div a {
+      text-decoration: none;
+      position: absolute;
+      display: block;
+      margin: 0;
+      padding: 0; }
+      html body #home div a span {
+        text-indent: -5000px;
+        display: inline-block; }
+  html body #home .ici {
+    width: 400px;
+    height: 231px;
+    margin-top: -74px;
+    background-image: url("../documentInfuze/dashboard_pres_dici.png");
+    background-repeat: no-repeat;
+    background-size: 400px 230px; }
+    html body #home .ici a {
+      width: 400px;
+      height: 230px; }
+  html body #home .compte {
+    background-image: url("../documentInfuze/dashboard_compte.png");
+    background-repeat: no-repeat; }
+  html body #home .message {
+    background-image: url("../documentInfuze/dashboard_message.png");
+    background-repeat: no-repeat; }
+    html body #home .message a {
+      left: 200px; }
+  html body #home .cartes {
+    background-image: url("../documentInfuze/dashboard_carte.png");
+    background-repeat: no-repeat; }
+  html body #home .scan {
+    background-image: url("../documentInfuze/dashboard_scan.png");
+    background-repeat: no-repeat; }
+    html body #home .scan a {
+      left: 200px; }
+  html body #home .compte,
+  html body #home .scan,
+  html body #home .message,
+  html body #home .cartes {
+    width: 200px;
+    height: 160px;
+    background-size: 200px 160px; }
+    html body #home .compte a,
+    html body #home .scan a,
+    html body #home .message a,
+    html body #home .cartes a {
+      width: 200px;
+      height: 160px; }
   html body #footer {
     width: 400px;
     clear: both;

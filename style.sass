@@ -918,6 +918,8 @@ html
         text-indent: 30px
 
       .notif
+        margin:
+          top: 30px
 
         ul
 
@@ -1128,6 +1130,86 @@ html
           color: #5e5e5e
           padding: 15px
 
+    #home
+      .home
+        float: left
+        background:
+          image: url("../documentInfuze/dashboard_fleche.png")
+          repeat: no-repeat
+          position: 30px 30px
+          size: 50px 30px
+        height: 76px
+        color: #fff
+        left: 50px
+        position: relative
+        top: 10px
+
+      div
+        float: left
+
+        a
+          text-decoration: none
+          position: absolute
+          display: block
+          margin: 0
+          padding: 0
+
+          span
+            text-indent: -5000px
+            display: inline-block
+
+      .ici
+        width: $width_ecran
+        height: 231px
+        margin:
+          top: -74px
+        background:
+          image: url("../documentInfuze/dashboard_pres_dici.png")
+          repeat: no-repeat
+          size: 400px 230px
+
+        a
+          width: $width_ecran
+          height: 230px
+
+      .compte
+        background:
+          image: url("../documentInfuze/dashboard_compte.png")
+          repeat: no-repeat
+
+      .message
+        background:
+          image: url("../documentInfuze/dashboard_message.png")
+          repeat: no-repeat
+
+        a
+          left: 200px
+
+      .cartes
+        background:
+          image: url("../documentInfuze/dashboard_carte.png")
+          repeat: no-repeat
+
+      .scan
+        background:
+          image: url("../documentInfuze/dashboard_scan.png")
+          repeat: no-repeat
+
+        a
+          left: 200px
+
+      .compte,
+      .scan,
+      .message,
+      .cartes
+        width: $moitier_taille
+        height: 160px
+        background:
+          size: 200px 160px
+
+        a
+          width: $moitier_taille
+          height: 160px
 
     #footer
       width: $width_ecran
