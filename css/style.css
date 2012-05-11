@@ -227,39 +227,44 @@ html body {
         margin-top: 1px;
         margin-bottom: 1px;
         margin-left: 5px; }
-    html body .class #scanner ul {
+    html body .class #scanner {
       padding-top: 5px;
       width: 400px;
       list-style: none;
       float: left;
       background-image: url("../documentInfuze/fond_parainage.png");
-      background-repeat: no-repeat; }
-      html body .class #scanner ul span {
+      background-repeat: no-repeat;
+      background-size: 400px 250px;
+      margin-bottom: 5px; }
+      html body .class #scanner span {
         font-weight: bold;
         float: left;
         text-indent: 180px; }
-      html body .class #scanner ul div {
+      html body .class #scanner div {
         width: 370px;
         height: 65px;
-        float: left;
-        margin-top: 5px;
-        margin-left: 3px; }
-        html body .class #scanner ul div:nth-child(1) {
+        float: left; }
+        html body .class #scanner div a span {
+          font-weight: bold;
+          color: white;
+          font-size: 18px;
+          text-indent: inherit; }
+        html body .class #scanner div:nth-child(1) {
           background-image: url("../documentInfuze/bouton_scanner_carte.png");
-          background-repeat: no-repeat; }
-        html body .class #scanner ul div:nth-child(2) {
+          background-repeat: no-repeat;
+          background-position: 17px 5px; }
+          html body .class #scanner div:nth-child(1) a span {
+            margin-left: 113px;
+            margin-top: 20px; }
+        html body .class #scanner div:last-child {
           background-image: url("../documentInfuze/bouton_validation.png");
           background-repeat: no-repeat;
-          background-position: 19px 15px; }
-          html body .class #scanner ul div:nth-child(2) a span {
-            font-weight: bold;
-            font-size: 18px;
-            color: white;
-            text-indent: inherit;
-            margin-top: 30px;
-            margin-left: 157px; }
-      html body .class #scanner ul input {
-        width: 370px;
+          background-position: 17px 5px; }
+          html body .class #scanner div:last-child a span {
+            margin-left: 153px;
+            margin-top: 20px; }
+      html body .class #scanner input {
+        width: 354px;
         float: left;
         border: none;
         border-radius: 8px;
@@ -269,9 +274,9 @@ html body {
         margin-top: 10px;
         margin-bottom: 15px;
         margin-left: 15px; }
-      html body .class #scanner ul li {
+      html body .class #scanner li {
         height: 70px; }
-        html body .class #scanner ul li div {
+        html body .class #scanner li div {
           float: left;
           position: relative;
           height: 55px;
@@ -502,6 +507,9 @@ html body {
       background-repeat: no-repeat; }
     html body .class #content {
       width: 400px; }
+      html body .class #content div ul li a {
+        text-decoration: none;
+        color: black; }
       html body .class #content .icon {
         height: 100px;
         margin-top: 20px;
@@ -511,7 +519,6 @@ html body {
         html body .class #content .icon a {
           text-decoration: none;
           float: left;
-          text-decoration: none;
           text-indent: -5000px;
           width: 400px;
           height: 90px;

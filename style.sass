@@ -296,75 +296,83 @@ html
             left: 5px
 
       #scanner
+        padding:
+          top: 5px
+        width: $width_ecran
+        list-style: none
+        float: left
+        background:
+          image: url("../documentInfuze/fond_parainage.png")
+          repeat: no-repeat
+          size: $width-ecran 250px
+        margin:
+          bottom: 5px
 
-        ul
-          padding:
-            top: 5px
-          width: $width_ecran
-          list-style: none
+        span
+          font-weight: bold
           float: left
-          background:
-            image: url("../documentInfuze/fond_parainage.png")
-            repeat: no-repeat
+          text-indent: 180px
 
-          span
-            font-weight: bold
-            float: left
-            text-indent: 180px
+        div
+          width: 370px
+          height: 65px
+          float: left
+
+          a
+            span
+              font-weight: bold
+              color: #fff
+              font-size: 18px
+              text-indent: inherit
+
+          &:nth-child(1)
+            background:
+              image: url("../documentInfuze/bouton_scanner_carte.png")
+              repeat: no-repeat
+              position: 17px 5px
+
+            a
+              span
+                margin:
+                  left: 113px
+                  top: 20px
+
+          &:last-child
+            background:
+              image: url("../documentInfuze/bouton_validation.png")
+              repeat: no-repeat
+              position: 17px 5px
+
+            a
+              span
+                margin:
+                  left: 153px
+                  top: 20px
+
+        input
+          width: 354px
+          float: left
+          border: none
+          border-radius: 8px
+          box-shadow: 1px 2px 6px inset
+          text-indent: 8px
+          height: 43px
+          margin:
+            top: 10px
+            bottom: 15px
+            left: 15px
+
+        li
+          height: 70px
 
           div
-            width: 370px
-            height: 65px
             float: left
-            margin:
-              top: 5px
-              left: 3px
-
-            &:nth-child(1)
-              background:
-                image: url("../documentInfuze/bouton_scanner_carte.png")
-                repeat: no-repeat
-
-            &:nth-child(2)
-              background:
-                image: url("../documentInfuze/bouton_validation.png")
-                repeat: no-repeat
-                position: 19px 15px
-
-              a
-                span
-                  font-weight: bold
-                  font-size: 18px
-                  color: #fff
-                  text-indent: inherit
-                  margin:
-                    top: 30px
-                    left: 157px
-
-          input
-            width: 370px
-            float: left
-            border: none
-            border-radius: 8px
-            box-shadow: 1px 2px 6px inset
-            text-indent: 8px
-            height: 43px
-            margin:
-              top: 10px
-              bottom: 15px
-              left: 15px
-
-          li
-            height: 70px
-
-            div
-              float: left
-              position: relative
-              height: 55px
-              background:
-                image: url('../documentInfuze/bouton_scanner_carte.png')
-                repeat: no-repeat
-                position: 19px 5px
+            position: relative
+            height: 55px
+            background:
+              image: url('../documentInfuze/bouton_scanner_carte.png')
+              repeat: no-repeat
+              position: 19px 5px
 
       #formulaire_reconnexion
         float: left
@@ -677,6 +685,13 @@ html
       #content
         width: $width_ecran
 
+        div
+          ul
+            li
+              a
+                text-decoration: none
+                color: #000
+
         .icon
           height: 100px
           margin:
@@ -689,7 +704,6 @@ html
           a
             text-decoration: none
             float: left
-            text-decoration: none
             text-indent: -5000px
             width: $width_ecran
             height: 90px
