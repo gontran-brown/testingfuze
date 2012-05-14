@@ -72,10 +72,11 @@ html body {
       html body #header #pass .ajouter {
         width: 120px;
         height: 48px;
-        left: 272px;
+        left: 207px;
         background-image: url("../documentInfuze/bouton_ajout_carte.png");
         background-repeat: no-repeat;
-        background-position: 0px 6px; }
+        background-position: 0px 6px;
+        background-size: 110px auto; }
   html body .class {
     position: relative;
     clear: both;
@@ -84,11 +85,11 @@ html body {
     html body .class #logo {
       background-image: url("../documentInfuze/fond_coordonee.png");
       background-repeat: no-repeat;
-      background-size: 390px 47px;
+      background-size: 310px 47px;
       background-position: 0 5px;
       margin-bottom: 7px;
       margin-left: 5px;
-      width: 390px;
+      width: 310px;
       height: 50px;
       border-radius: 10px 10px 0 0; }
     html body .class #popup {
@@ -135,7 +136,7 @@ html body {
     html body .class .slogan2,
     html body .class .slogan3 {
       color: white;
-      font-size: 20px;
+      font-size: 15px;
       font-weight: bold;
       line-height: 3em; }
     html body .class .slogan {
@@ -200,14 +201,8 @@ html body {
       background-repeat: no-repeat; }
     html body .class #formulaire {
       width: 320px; }
-      html body .class #formulaire .slogan {
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 2em;
-        text-align: center; }
       html body .class #formulaire input {
-        width: 390px;
+        width: 310px;
         border: none;
         border-radius: 8px;
         height: 43px;
@@ -227,7 +222,7 @@ html body {
       html body .class #scanner span {
         font-weight: bold;
         float: left;
-        text-indent: 180px; }
+        text-indent: 138px; }
       html body .class #scanner div {
         width: 370px;
         height: 65px;
@@ -240,19 +235,21 @@ html body {
         html body .class #scanner div:nth-child(1) {
           background-image: url("../documentInfuze/bouton_scanner_carte.png");
           background-repeat: no-repeat;
-          background-position: 17px 5px; }
+          background-position: 14px 5px;
+          background-size: 290px auto; }
           html body .class #scanner div:nth-child(1) a span {
-            margin-left: 113px;
-            margin-top: 20px; }
+            margin-left: 95px;
+            margin-top: 15px; }
         html body .class #scanner div:last-child {
           background-image: url("../documentInfuze/bouton_validation.png");
           background-repeat: no-repeat;
-          background-position: 17px 5px; }
+          background-position: 14px 5px;
+          background-size: 290px auto; }
           html body .class #scanner div:last-child a span {
-            margin-left: 153px;
-            margin-top: 20px; }
+            margin-left: 135px;
+            margin-top: 15px; }
       html body .class #scanner input {
-        width: 354px;
+        width: 290px;
         float: left;
         border: none;
         border-radius: 8px;
@@ -387,28 +384,33 @@ html body {
         html body .class #message ul li div {
           float: left;
           position: relative;
+          height: 55px;
+          width: 100px;
           background-image: url("../documentInfuze/.png");
           background-repeat: no-repeat; }
           html body .class #message ul li div div {
             float: left;
             left: 95px;
-            width: 290px;
-            height: 70px;
+            width: 225px;
+            height: 55px;
             background-image: url("../documentInfuze/fleche_no_active.png");
             background-repeat: no-repeat;
-            background-position: 275px 22px; }
+            background-position: 205px 19px; }
             html body .class #message ul li div div h3 {
               background-color: #3366cc;
               color: white;
-              display: inline-block; }
+              display: inline-block;
+              font-size: 14px; }
             html body .class #message ul li div div .soustitre {
               font-weight: bold;
-              width: 300px; }
+              width: 200px;
+              font-size: 12px; }
             html body .class #message ul li div div span {
-              float: left; }
+              float: left;
+              font-size: 11px; }
     html body .class #carte,
     html body .class #carnet_carte {
-      width: 375px;
+      width: 295px;
       margin-top: -12px;
       float: left; }
       html body .class #carte ul,
@@ -419,17 +421,16 @@ html body {
           border-radius: 20px 20px 0px 0px;
           background-image: url("../documentInfuze/fond_coordonee.png");
           background-repeat: no-repeat;
-          height: 70px;
+          height: 55px;
           margin-bottom: 10px; }
           html body .class #carte ul li div,
           html body .class #carnet_carte ul li div {
-            height: 70px;
+            height: 55px;
             border-bottom: solid white; }
             html body .class #carte ul li div div,
             html body .class #carnet_carte ul li div div {
               margin-left: 95px;
-              width: 273px;
-              height: 70px; }
+              height: 55px; }
               html body .class #carte ul li div div .soustitre,
               html body .class #carnet_carte ul li div div .soustitre {
                 color: black;
@@ -439,7 +440,7 @@ html body {
     html body .class #carte ul li div div {
       background-image: url("../documentInfuze/fleche_no_active.png");
       background-repeat: no-repeat;
-      background-position: 245px 22px; }
+      background-position: 180px 22px; }
     html body .class #carnet_carte ul li div div input {
       float: left;
       left: 230px;
@@ -476,7 +477,7 @@ html body {
                 line-height: 4em; }
     html body .class #recherche {
       width: 320px;
-      height: 53px;
+      height: 55px;
       margin-bottom: 10px;
       background-image: url("../documentInfuze/fond_recherche.png");
       background-repeat: no-repeat; }
@@ -491,13 +492,13 @@ html body {
           border: none;
           border-radius: 20px;
           box-shadow: 1px 3px 4px #707070 inset;
-          width: 375px;
+          width: 315px;
           height: 38px;
-          margin-left: 10px;
+          margin-left: 1px;
           margin-top: 7px; }
         html body .class #recherche input:nth-child(2) {
           float: left;
-          left: 342px;
+          left: 280px;
           top: -32px;
           position: relative; }
     html body .class #alphabet {

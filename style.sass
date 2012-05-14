@@ -9,10 +9,9 @@ html
     background:
       image: url('../documentInfuze/background.jpg')
       repeat: no-repeat
-      size: 420px 700px
+      size: $width_ecran $height_ecran
 
     #header
-      margin: 2px 10px
       width: $width_ecran
       clear: both
 
@@ -20,56 +19,53 @@ html
         list-style: none
         float: left
         width: $width_ecran
+
       #pass
-        height: 60px
+        height: $height_header
         background:
           image: url('../documentInfuze/top_noir.png')
           repeat: no-repeat
+
         li
           display: inline
           float: left
           margin:
-            bottom: 0px
-            left: 10px
-            top: 7px
+            top: 2px
           list-style: none
 
         a
           text-decoration: none
-          float: left
-          cursor: pointer
           text-decoration: none
           position: absolute
           display: block
-          margin: 0
-          padding: 0
           text-indent: -5000px
 
         span
-          margin: 0 10px 0 10px
-          padding: 9px 7px 3px 18px
+          padding: 6px 0 0 18px
           position: relative
           float: left
 
         .vip
-          left: 105px
+          left: 75px
           color: #fff
-          font-size: 1.3em
+
           &:after
             content: "VIP"
             font-weight: bold
 
         .titre
-          left: 75px
+          left: 60px
           color: #fff
-          font-size: 1.3em
+          font-size: 1.1em
 
         .retour
-          width: 100px
-          height: 64px
+          margin-left: 1px
+          width: 74px
+          height: $height_bouton_header
           background:
             image: url('../documentInfuze/bouton_retour.png')
             repeat: no-repeat
+            size: 70px 44px
 
         .map
           width: 150px
@@ -82,54 +78,47 @@ html
 
         .valider
           width: 93px
-          height: 48px
+          height: $height_bouton_header
           left: 300px
           background:
             image: url('../documentInfuze/bouton_valider.png')
             repeat: no-repeat
 
-        .map
-          width: 150px
-          height: 50px
-          left: 247px
-          top: 13px
-          background:
-            image: url('../documentInfuze/bouton_list_map.png')
-            repeat: no-repeat
-
         .modifier
-          width: 93px
-          height: 48px
-          left: 296px
+          width: 90px
+          height: $height_bouton_header
+          left: ($width_ecran - 93px)
           background:
             image: url('../documentInfuze/bouton_modifier.png')
             repeat: no-repeat
+            size: 90px auto
 
         .ajouter
           width: 120px
           height: 48px
-          left: 272px
+          left: ($width_ecran - 113px )
           background:
             image: url('../documentInfuze/bouton_ajout_carte.png')
             repeat: no-repeat
             position: 0px 6px
+            size: 110px auto
 
     .class
-      margin: 0 10px
       position: relative
       clear: both
       width: $width_ecran
+      height: $height_class
 
       #logo
         background:
           image: url('../documentInfuze/fond_coordonee.png')
           repeat: no-repeat
-          size: 390px 47px
+          size: 310px 47px
           position: 0 5px
         margin:
           bottom: 7px
           left: 5px
-        width: 390px
+        width: 310px
         height: 50px
         border-radius: 10px 10px 0 0
 
@@ -189,7 +178,7 @@ html
       .slogan2,
       .slogan3
         color: #fff
-        font-size: 20px
+        font-size: 15px
         font-weight: bold
         line-height: 3em
 
@@ -278,15 +267,8 @@ html
       #formulaire
         width: $width_ecran
 
-        .slogan
-          color: #fff
-          font-size: 20px
-          font-weight: bold
-          line-height: 2em
-          text-align: center
-
         input
-          width: 390px
+          width: 310px
           border: none
           border-radius: 8px
           height: 43px
@@ -312,7 +294,7 @@ html
         span
           font-weight: bold
           float: left
-          text-indent: 180px
+          text-indent: 138px
 
         div
           width: 370px
@@ -330,28 +312,30 @@ html
             background:
               image: url("../documentInfuze/bouton_scanner_carte.png")
               repeat: no-repeat
-              position: 17px 5px
+              position: 14px 5px
+              size: ($width_ecran - 30px) auto
 
             a
               span
                 margin:
-                  left: 113px
-                  top: 20px
+                  left: 95px
+                  top: 15px
 
           &:last-child
             background:
               image: url("../documentInfuze/bouton_validation.png")
               repeat: no-repeat
-              position: 17px 5px
+              position: 14px 5px
+              size: ($width_ecran - 30px) auto
 
             a
               span
                 margin:
-                  left: 153px
-                  top: 20px
+                  left: 135px
+                  top: 15px
 
         input
-          width: 354px
+          width: ($width_ecran - 30px)
           float: left
           border: none
           border-radius: 8px
@@ -535,11 +519,13 @@ html
             background:
               image: url('../documentInfuze/fond_coordonee.png')
               repeat: no-repeat
-            height: 70px
+            height: $height_ul_li
 
             div
               float: left
               position: relative
+              height: $height_ul_li
+              width: 100px
               background:
                 image: url('../documentInfuze/.png')
                 repeat: no-repeat
@@ -547,28 +533,31 @@ html
               div
                 float: left
                 left: 95px
-                width: 290px
-                height: 70px
+                width: 225px
+                height: $height_ul_li
                 background:
                   image: url('../documentInfuze/fleche_no_active.png')
                   repeat: no-repeat
-                  position: 275px 22px
+                  position: 205px 19px
 
                 h3
                   background-color: #3366CC
                   color: #fff
                   display: inline-block
+                  font-size: 14px
 
                 .soustitre
                   font-weight: bold
-                  width: 300px
+                  width: 200px
+                  font-size: 12px
 
                 span
                   float: left
+                  font-size: 11px
 
       #carte,
       #carnet_carte
-        width: 375px
+        width: ($width-ecran - 25px)
         margin-top: -12px
         float: left
 
@@ -581,19 +570,18 @@ html
             background:
               image: url('../documentInfuze/fond_coordonee.png')
               repeat: no-repeat
-            height: 70px
+            height: $height_ul_li
             margin:
               bottom: 10px
 
             div
-              height: 70px
+              height: $height_ul_li
               border:
                 bottom: solid #fff
 
               div
                 margin-left: 95px
-                width: 273px
-                height: 70px
+                height: $height_ul_li
 
                 .soustitre
                   color: #000
@@ -609,7 +597,7 @@ html
                 background:
                   image: url('../documentInfuze/fleche_no_active.png')
                   repeat: no-repeat
-                  position: 245px 22px
+                  position: 180px 22px
 
       #carnet_carte
         ul
@@ -625,6 +613,7 @@ html
       #profil
         width: $width_ecran
         float: left
+        overflow: hidden
 
         ul
           list-style: none
@@ -633,38 +622,35 @@ html
             background:
               image: url('../documentInfuze/fond_coordonee.png')
               repeat: no-repeat
-            height: 70px
+            height: $height_ul_li
             margin:
-              bottom: 1px
               top: 1px
 
             div
               text-indent: 15px
               width: $width_ecran
-              height: 70px
+              height: $height_ul_li
               background:
                 image: url('../documentInfuze/fleche_no_active.png')
                 repeat: no-repeat
-                position: 376px 26px
+                position: ($width_ecran - 20px) 26px
 
               a
                 text-decoration: none
                 position: absolute
                 display: block
-                height: 64px
+                height: $height_ul_li
                 width: $width_ecran
-                margin: 0
-                padding: 0
 
                 .soustitre
                   color: #000
                   font-weight: bold
-                  font-size: 17px
+                  font-size: 14px
                   line-height: 4em
 
       #recherche
         width: $width_ecran
-        height: 53px
+        height: $height_ul_li
         margin:
           bottom: 10px
         background:
@@ -684,15 +670,15 @@ html
             border: none
             border-radius: 20px
             box-shadow: 1px 3px 4px #707070 inset
-            width: 375px
+            width: ($width_ecran - 5px)
             height: 38px
             margin:
-              left: 10px
+              left: 1px
               top: 7px
 
           &:nth-child(2)
             float: left
-            left: 342px
+            left: ($width_ecran - 40px)
             top: -32px
             position: relative
 
@@ -1136,11 +1122,11 @@ html
         background:
           image: url("../documentInfuze/dashboard_fleche.png")
           repeat: no-repeat
-          position: 30px 30px
-          size: 50px 30px
-        height: 76px
+          position: 25px 20px
+          size: 45px 23px
+        height: 75px
         color: #fff
-        left: 50px
+        left: 35px
         position: relative
         top: 10px
 
@@ -1160,17 +1146,17 @@ html
 
       .ici
         width: $width_ecran
-        height: 231px
+        height: ($height_image_dashboard + 12)
         margin:
           top: -74px
         background:
           image: url("../documentInfuze/dashboard_pres_dici.png")
           repeat: no-repeat
-          size: 400px 230px
+          size: $width_ecran ($height_image_dashboard + 12)
 
         a
           width: $width_ecran
-          height: 230px
+          height: $height_image_dashboard
 
       .compte
         background:
@@ -1183,7 +1169,7 @@ html
           repeat: no-repeat
 
         a
-          left: 200px
+          left: $width_image_dashboard
 
       .cartes
         background:
@@ -1196,33 +1182,34 @@ html
           repeat: no-repeat
 
         a
-          left: 200px
+          left: $width_image_dashboard
 
       .compte,
       .scan,
       .message,
       .cartes
-        width: $moitier_taille
-        height: 160px
+        width: $width_image_dashboard
+        height: $height_image_dashboard
         background:
-          size: 200px 160px
+          size: $width_image_dashboard $height_image_dashboard
 
         a
           width: $moitier_taille
-          height: 160px
+          height: $height_image_dashboard
 
     #footer
       width: $width_ecran
       clear: both
       float: left
-      height: 70px
+      height: $height_footer
       background:
         image: url("../documentInfuze/footer.png")
         repeat: no-repeat
         position: 0px 0px
+        size: $width-ecran auto
 
       ul
-        height: 70px
+        height: 51px
 
         li
           list-style: none
@@ -1234,8 +1221,8 @@ html
             text-decoration: none
             position: absolute
             display: block
-            height: 64px
-            width: 80px
+            height: 50px
+            width: 64px
             margin: 0
             padding: 0
 
@@ -1246,7 +1233,7 @@ html
         .carte
 
           a
-            left: 86px
+            left: 64px
 
             &:active
               background:
@@ -1257,7 +1244,7 @@ html
         .compte
 
           a
-            left: 167px
+            left: 128px
 
             &:active
               background:
@@ -1268,7 +1255,7 @@ html
         .lieu
 
           a
-            left: 247px
+            left: 192px
 
             &:active
               background:
@@ -1279,7 +1266,7 @@ html
         .scan
 
           a
-            left: 329px
+            left: 256px
 
             &:active
               background:
