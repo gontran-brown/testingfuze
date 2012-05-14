@@ -20,19 +20,13 @@ html body {
       html body #header #pass li {
         display: inline;
         float: left;
-        margin-bottom: 0px;
-        margin-left: 10px;
-        margin-top: 7px;
+        margin-top: 2px;
         list-style: none; }
       html body #header #pass a {
         text-decoration: none;
-        float: left;
-        cursor: pointer;
         text-decoration: none;
         position: absolute;
         display: block;
-        margin: 0;
-        padding: 0;
         text-indent: -5000px; }
       html body #header #pass span {
         padding: 6px 0 0 18px;
@@ -45,14 +39,16 @@ html body {
           content: "VIP";
           font-weight: bold; }
       html body #header #pass .titre {
-        left: 75px;
+        left: 60px;
         color: white;
-        font-size: 1.3em; }
+        font-size: 1.1em; }
       html body #header #pass .retour {
-        width: 100px;
-        height: 64px;
+        margin-left: 1px;
+        width: 74px;
+        height: 45px;
         background-image: url("../documentInfuze/bouton_retour.png");
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-size: 70px 44px; }
       html body #header #pass .map {
         width: 150px;
         height: 48px;
@@ -62,23 +58,17 @@ html body {
         background-repeat: no-repeat; }
       html body #header #pass .valider {
         width: 93px;
-        height: 48px;
+        height: 45px;
         left: 300px;
         background-image: url("../documentInfuze/bouton_valider.png");
         background-repeat: no-repeat; }
-      html body #header #pass .map {
-        width: 150px;
-        height: 50px;
-        left: 247px;
-        top: 13px;
-        background-image: url("../documentInfuze/bouton_list_map.png");
-        background-repeat: no-repeat; }
       html body #header #pass .modifier {
-        width: 93px;
-        height: 48px;
-        left: 296px;
+        width: 90px;
+        height: 45px;
+        left: 227px;
         background-image: url("../documentInfuze/bouton_modifier.png");
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        background-size: 90px auto; }
       html body #header #pass .ajouter {
         width: 120px;
         height: 48px;
@@ -89,7 +79,8 @@ html body {
   html body .class {
     position: relative;
     clear: both;
-    width: 320px; }
+    width: 320px;
+    height: 383.4px; }
     html body .class #logo {
       background-image: url("../documentInfuze/fond_coordonee.png");
       background-repeat: no-repeat;
@@ -392,7 +383,7 @@ html body {
       html body .class #message ul li {
         background-image: url("../documentInfuze/fond_coordonee.png");
         background-repeat: no-repeat;
-        height: 70px; }
+        height: 55px; }
         html body .class #message ul li div {
           float: left;
           position: relative;
@@ -456,34 +447,32 @@ html body {
       position: relative; }
     html body .class #profil {
       width: 320px;
-      float: left; }
+      float: left;
+      overflow: hidden; }
       html body .class #profil ul {
         list-style: none; }
         html body .class #profil ul li {
           background-image: url("../documentInfuze/fond_coordonee.png");
           background-repeat: no-repeat;
-          height: 70px;
-          margin-bottom: 1px;
+          height: 55px;
           margin-top: 1px; }
           html body .class #profil ul li div {
             text-indent: 15px;
             width: 320px;
-            height: 70px;
+            height: 55px;
             background-image: url("../documentInfuze/fleche_no_active.png");
             background-repeat: no-repeat;
-            background-position: 376px 26px; }
+            background-position: 300px 26px; }
             html body .class #profil ul li div a {
               text-decoration: none;
               position: absolute;
               display: block;
-              height: 64px;
-              width: 320px;
-              margin: 0;
-              padding: 0; }
+              height: 55px;
+              width: 320px; }
               html body .class #profil ul li div a .soustitre {
                 color: black;
                 font-weight: bold;
-                font-size: 17px;
+                font-size: 14px;
                 line-height: 4em; }
     html body .class #recherche {
       width: 320px;
@@ -872,12 +861,13 @@ html body {
     width: 320px;
     clear: both;
     float: left;
-    height: 70px;
+    height: 51px;
     background-image: url("../documentInfuze/footer.png");
     background-repeat: no-repeat;
-    background-position: 0px 0px; }
+    background-position: 0px 0px;
+    background-size: 320px auto; }
     html body #footer ul {
-      height: 70px; }
+      height: 51px; }
       html body #footer ul li {
         list-style: none;
         display: inline;
@@ -887,33 +877,33 @@ html body {
           text-decoration: none;
           position: absolute;
           display: block;
-          height: 64px;
-          width: 80px;
+          height: 50px;
+          width: 64px;
           margin: 0;
           padding: 0; }
         html body #footer ul li span {
           text-indent: -5000px;
           display: inline-block; }
       html body #footer ul .carte a {
-        left: 86px; }
+        left: 64px; }
         html body #footer ul .carte a:active {
           background-image: url("../documentInfuze/icon_carte.png");
           background-repeat: no-repeat;
           background-position: 5px 2px; }
       html body #footer ul .compte a {
-        left: 167px; }
+        left: 128px; }
         html body #footer ul .compte a:active {
           background-image: url("../documentInfuze/icon_contact.png");
           background-repeat: no-repeat;
           background-position: 5px 2px; }
       html body #footer ul .lieu a {
-        left: 247px; }
+        left: 192px; }
         html body #footer ul .lieu a:active {
           background-image: url("../documentInfuze/.png");
           background-repeat: no-repeat;
           background-position: 5px 2px; }
       html body #footer ul .scan a {
-        left: 329px; }
+        left: 256px; }
         html body #footer ul .scan a:active {
           background-image: url("../documentInfuze/icon_scan.png");
           background-repeat: no-repeat; }
