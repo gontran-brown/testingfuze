@@ -79,7 +79,8 @@ html
         .valider
           width: 93px
           height: $height_bouton_header
-          left: 300px
+          left: 225px
+          top: 0
           background:
             image: url('../documentInfuze/bouton_valider.png')
             repeat: no-repeat
@@ -160,7 +161,7 @@ html
         clear: both
         font-size: 20px
         font-weight: bold
-        width: 399px
+        width: $width_ecran
         height: 30px
         line-height: 1.8em
         text-align: center
@@ -189,7 +190,7 @@ html
         background:
           image: url("../documentInfuze/fleche_selection.png")
           repeat: no-repeat
-          position: 277px 6px
+          position: 225px 6px
 
       .slogan3
         height: 60px
@@ -606,8 +607,8 @@ html
               div
                 input
                   float: left
-                  left: 230px
-                  top: 20px
+                  left: 165px
+                  top: 14px
                   position: relative
 
       #profil
@@ -784,8 +785,6 @@ html
 
       div
         width: $width_ecran
-        margin:
-          bottom: 3px
 
         ul
           list-style: none
@@ -801,21 +800,25 @@ html
 
               span
                 text-align: center
-                display: inline-block
-                font-size: 20px
+                font-size: 16px
                 font-weight: bold
-                line-height: 2.6em
-                margin-left: 65px
+                line-height: 2.4em
+                margin-left: 43px
 
     #Etape_choix,
     #Etape_recherche,
     #Etape_choix_notif
 
-      div,
+      div
 
       .choix
 
         div
+          ul
+            li
+              background:
+                position: 1px 6px
+                size: 36px auto
 
           &:nth-child(1)
 
@@ -893,7 +896,8 @@ html
               background:
                 image: url("../documentInfuze/bouton_on.png")
                 repeat: no-repeat
-                position: 293px 7px
+                position: 233px 9px
+                size: 81px auto
 
       .enseigne
         color: #fff
